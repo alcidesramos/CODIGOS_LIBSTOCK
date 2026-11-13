@@ -1,0 +1,467 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1824 ]
+[d frameptr 6 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+"43 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"73 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\main.c
+[v _LEEBIT LEEBIT `(uc  1 e 1 0 ]
+"81
+[v _lee_distancia lee_distancia `(f  1 e 4 0 ]
+"137
+[v _floattostr_ floattostr_ `(v  1 e 1 0 ]
+"188
+[v _manda_serial manda_serial `(v  1 e 1 0 ]
+"195
+[v _main main `(v  1 e 1 0 ]
+"66 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"113
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"153
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"155
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"163
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"166
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"170
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"174
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"50 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"60
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"74
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"63 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"113
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+[s S105 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"546 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1824.h
+[u S114 . 1 `S105 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES114  1 e 1 @17 ]
+"709
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"729
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"749
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S127 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+"771
+[s S136 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[u S140 . 1 `S127 1 . 1 0 `S136 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES140  1 e 1 @24 ]
+"821
+[v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
+[s S157 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+"843
+[s S166 . 1 `uc 1 T1GSS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
+]
+[u S170 . 1 `S157 1 . 1 0 `S166 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES170  1 e 1 @25 ]
+"1115
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1165
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S58 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1391
+[s S67 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S72 . 1 `S58 1 . 1 0 `S67 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES72  1 e 1 @149 ]
+"1502
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1561
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1619
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1952
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S393 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"1967
+[u S400 . 1 `S393 1 . 1 0 ]
+[v _LATAbits LATAbits `VES400  1 e 1 @268 ]
+"1997
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2319
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2668
+[v _APFCON0 APFCON0 `VEuc  1 e 1 @285 ]
+"2729
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @286 ]
+"2767
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2814
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3054
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3074
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3110
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"3160
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3193
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S308 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3210
+[u S317 . 1 `S308 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES317  1 e 1 @413 ]
+"3255
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S287 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3272
+[u S296 . 1 `S287 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES296  1 e 1 @414 ]
+"3317
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3369
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3427
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"7082
+[v _LATA5 LATA5 `VEb  1 e 0 @2149 ]
+"7283
+[v _PLLR PLLR `VEb  1 e 0 @1238 ]
+"7691
+[v _TMR1IF TMR1IF `VEb  1 e 0 @136 ]
+"7694
+[v _TMR1ON TMR1ON `VEb  1 e 0 @192 ]
+"52 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\main.c
+[v _cristal cristal `DCuc  1 e 1 0 ]
+"65
+[v _texto texto `[17]uc  1 e 17 0 ]
+"68
+[v _contador contador `ui  1 e 2 0 ]
+"69
+[v _distancia distancia `f  1 e 4 0 ]
+[s S229 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"52 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/eusart.c
+[u S234 . 1 `S229 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES234  1 e 1 0 ]
+"58
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"57 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"195 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"262
+} 0
+"188
+[v _manda_serial manda_serial `(v  1 e 1 0 ]
+{
+[v manda_serial@info info `*.26uc  1 p 2 1 ]
+"192
+} 0
+"132 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/eusart.c
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 0 ]
+"139
+} 0
+"81 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\main.c
+[v _lee_distancia lee_distancia `(f  1 e 4 0 ]
+{
+[v lee_distancia@puerto puerto `uc  1 a 1 wreg ]
+"83
+[v lee_distancia@calculo calculo `f  1 a 4 60 ]
+"81
+[v lee_distancia@puerto puerto `uc  1 a 1 wreg ]
+[v lee_distancia@pin pin `uc  1 p 1 52 ]
+"87
+[v lee_distancia@puerto puerto `uc  1 a 1 72 ]
+"133
+} 0
+"73
+[v _LEEBIT LEEBIT `(uc  1 e 1 0 ]
+{
+[v LEEBIT@port port `*.39uc  1 p 2 0 ]
+[v LEEBIT@bit1 bit1 `uc  1 p 1 2 ]
+"78
+} 0
+"137
+[v _floattostr_ floattostr_ `(v  1 e 1 0 ]
+{
+"142
+[v floattostr_@y y `d  1 a 4 70 ]
+"141
+[v floattostr_@ie ie `i  1 a 2 78 ]
+[v floattostr_@i i `i  1 a 2 76 ]
+[v floattostr_@ndig ndig `i  1 a 2 74 ]
+[v floattostr_@k k `i  1 a 2 68 ]
+"137
+[v floattostr_@x x `f  1 p 4 58 ]
+[v floattostr_@str str `*.4uc  1 p 1 62 ]
+[v floattostr_@precision precision `uc  1 p 1 63 ]
+"184
+} 0
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"43 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 10 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 9 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 0 ]
+"70
+} 0
+"242 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 50 ]
+[v ___flsub@b b `d  1 p 4 54 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 49 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 48 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 47 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 46 ]
+"10
+[v ___fladd@b b `d  1 p 4 26 ]
+[v ___fladd@a a `d  1 p 4 30 ]
+"237
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S748 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S753 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S756 . 4 `l 1 i 4 0 `d 1 f 4 0 `S748 1 fAsBytes 4 0 `S753 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S756  1 a 4 46 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 40 ]
+[s S825 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S828 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S825 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S828  1 a 2 50 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 45 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 44 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 39 ]
+"8
+[v ___flmul@b b `d  1 p 4 26 ]
+[v ___flmul@a a `d  1 p 4 30 ]
+"205
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 0 ]
+[v ___flge@ff2 ff2 `d  1 p 4 4 ]
+"19
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 20 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 13 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 18 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 25 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 24 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 17 ]
+"8
+[v ___fldiv@a a `d  1 p 4 0 ]
+[v ___fldiv@b b `d  1 p 4 4 ]
+"185
+} 0
+"50 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"74
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
+"63 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"55 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"60 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"66 C:\Users\Alcides Ramos\Desktop\ULTRASONICO SFR04\ULTRASONICO.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"170
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"172
+} 0
+"166
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"168
+} 0
+"174
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"176
+} 0

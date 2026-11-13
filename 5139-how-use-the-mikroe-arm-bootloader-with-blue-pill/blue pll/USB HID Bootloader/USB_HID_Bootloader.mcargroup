@@ -1,0 +1,7 @@
+[PROJECTS]
+Count=3
+Project0=Projects\STM32F107VC\USB HID Bootloader.mcpar
+Project1=Projects\STM32F207VG\USB HID Bootloader.mcpar
+Project2=Projects\STM32F407VG\USB HID Bootloader.mcpar
+[ActiveProject]
+Index=0

@@ -1,0 +1,9 @@
+<WCH v="2">
+<item n="_suma_U" r="1" s="False" e="True" i="323">
+<item n="_uno" r="3" s="True" e="False" i="0"/>
+<item n="_dos" r="3" s="True" e="False" i="1"/>
+</item>
+<item n="_suma_Y" r="1" s="False" e="True" i="324">
+<item n="_salida" r="3" s="True" e="False" i="0"/>
+</item>
+</WCH>

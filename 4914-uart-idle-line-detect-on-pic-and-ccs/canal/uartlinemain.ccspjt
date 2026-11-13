@@ -1,0 +1,45 @@
+[PROJECT]
+Target=uartlinemain.hex
+Processor_Text=PIC18F2550
+CCSVerions=5.091
+Compiler=PCH
+CCSVersion=5.091
+[Target Data]
+FileList=uartlinemain.c
+[Directories]
+Include=
+[C:\Users\Alcides Ramos\Desktop\ccs inlinedetect\canal\uartlinemain]
+Type=4
+[mru-list]
+1=uartlinemain.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=20-02-2022
+D1_L=4
+D1_L1=[83749]Project Opened.
+D1_L2=[83754]Started Editing.
+D1_L3=[84211]Stopped Editing.
+TotalEdit=8
+TotalDebug=0
+D1_E=8
+D1_D=0
+D1_L4=[84211]Project Closed.
+
+[Opened Files]
+1=uartlinemain.c
+t1=53
+Count=2
+2=..\..\..\..\..\Program Files (x86)\PICC\Devices\18F2550.h
+t2=1
+[uartlinemain.c]
+Type=4
+
+[defines]
+buildcount=5
+[Units]
+Count=1
+1=uartlinemain (main)

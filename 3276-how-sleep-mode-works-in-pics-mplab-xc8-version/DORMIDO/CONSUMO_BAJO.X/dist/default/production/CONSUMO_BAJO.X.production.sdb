@@ -1,0 +1,346 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16LF1824 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"50 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\main.c
+[v _EUSART_Write_text EUSART_Write_text `(v  1 e 1 0 ]
+"57
+[v _main main `(v  1 e 1 0 ]
+"84 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"141
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"163
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"183
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"209
+[v _EUSART_RxDataHandler EUSART_RxDataHandler `(v  1 e 1 0 ]
+"219
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"221
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"229
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"233
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"237
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"241
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"246
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+"33 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/ext_int.c
+[v _INT_ISR INT_ISR `(v  1 e 1 0 ]
+"42
+[v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
+"51
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+"55
+[v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
+"62
+[v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
+"52 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"60
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"70
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+[s S31 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1824.h
+[s S40 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S45 . 1 `S31 1 . 1 0 `S40 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES45  1 e 1 @11 ]
+[s S268 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"546
+[u S277 . 1 `S268 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES277  1 e 1 @17 ]
+"1115
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1165
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S202 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1232
+[u S211 . 1 `S202 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES211  1 e 1 @145 ]
+[s S146 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1391
+[s S155 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S160 . 1 `S146 1 . 1 0 `S155 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES160  1 e 1 @149 ]
+"1502
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1561
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1619
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1952
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1997
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S63 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+]
+"2012
+[u S70 . 1 `S63 1 . 1 0 ]
+[v _LATCbits LATCbits `VES70  1 e 1 @270 ]
+"2319
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2668
+[v _APFCON0 APFCON0 `VEuc  1 e 1 @285 ]
+"2729
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @286 ]
+"2767
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2814
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3054
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3074
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3110
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"3160
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3193
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S311 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3210
+[u S320 . 1 `S311 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES320  1 e 1 @413 ]
+"3255
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S289 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3272
+[u S298 . 1 `S289 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES298  1 e 1 @414 ]
+"3317
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3369
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3427
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"64 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/eusart.c
+[v _eusartRxHead eusartRxHead `VEuc  1 e 1 0 ]
+"65
+[v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
+"66
+[v _eusartRxBuffer eusartRxBuffer `VE[8]uc  1 e 8 0 ]
+[s S190 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"67
+[u S195 . 1 `S190 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[8]S195  1 e 8 0 ]
+"68
+[v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
+"69
+[v _eusartRxLastError eusartRxLastError `VES195  1 e 1 0 ]
+"74
+[v _EUSART_RxDefaultInterruptHandler EUSART_RxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"76
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"77
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"78
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"31 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/ext_int.c
+[v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
+"57 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"107
+} 0
+"50 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"70
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"74
+} 0
+"55 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"60 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"68
+} 0
+"62 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/ext_int.c
+[v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"51
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 1 ]
+"53
+} 0
+"84 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"120
+} 0
+"246
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"248
+} 0
+"237
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"239
+} 0
+"233
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"235
+} 0
+"241
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"243
+} 0
+"50 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\main.c
+[v _EUSART_Write_text EUSART_Write_text `(v  1 e 1 0 ]
+{
+[v EUSART_Write_text@trama trama `*.25uc  1 p 2 2 ]
+"54
+} 0
+"163 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/eusart.c
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 1 ]
+"170
+} 0
+"52 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"74
+} 0
+"33 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/ext_int.c
+[v _INT_ISR INT_ISR `(v  1 e 1 0 ]
+{
+"39
+} 0
+"42
+[v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
+{
+"49
+} 0
+"55
+[v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"60
+} 0
+"183 C:\Users\Alcides Ramos\Desktop\nada\DORMIDO\CONSUMO_BAJO.X\mcc_generated_files/eusart.c
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"207
+} 0
+"221
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+{
+"227
+} 0
+"219
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"229
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+{
+"231
+} 0
+"209
+[v _EUSART_RxDataHandler EUSART_RxDataHandler `(v  1 e 1 0 ]
+{
+"217
+} 0

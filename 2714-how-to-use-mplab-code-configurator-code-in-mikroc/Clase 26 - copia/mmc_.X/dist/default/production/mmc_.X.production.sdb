@@ -1,0 +1,181 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1705 ]
+[d frameptr 6 ]
+"85 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/adc.c
+[e E4127 . `uc
+channel_AN1 1
+channel_FVRBuffer2 28
+channel_Temp 29
+channel_DAC 30
+channel_FVRBuffer1 31
+]
+"77 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\main.c
+[e E4133 . `uc
+channel_AN1 1
+channel_FVRBuffer2 28
+channel_Temp 29
+channel_DAC 30
+channel_FVRBuffer1 31
+]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"54 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"64 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"112
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+"58 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/dac.c
+[v _DAC_Initialize DAC_Initialize `(v  1 e 1 0 ]
+"66
+[v _DAC_SetOutput DAC_SetOutput `(v  1 e 1 0 ]
+"50 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"60
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"72
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"57 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"1022 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1705.h
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1067
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S148 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1313
+[s S155 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S162 . 1 `S148 1 . 1 0 `S155 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES162  1 e 1 @149 ]
+"1430
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1489
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1547
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1619
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @154 ]
+"1688
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1708
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1728
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S33 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"1753
+[s S37 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+[s S45 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S48 . 1 `S33 1 . 1 0 `S37 1 . 1 0 `S45 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES48  1 e 1 @157 ]
+"1808
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1861
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @159 ]
+"1909
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1954
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2296
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2405
+[v _DAC1CON0 DAC1CON0 `VEuc  1 e 1 @280 ]
+"2515
+[v _DAC1CON1 DAC1CON1 `VEuc  1 e 1 @281 ]
+"2681
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2726
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3812
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3862
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"5310
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"5355
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"5899
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @780 ]
+"5944
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @782 ]
+"53 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\main.c
+[v _codigo codigo `ui  1 e 2 0 ]
+"54
+[v _main main `(v  1 e 1 0 ]
+{
+"81
+} 0
+"50 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"72
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"57 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"102
+} 0
+"60 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"58 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/dac.c
+[v _DAC_Initialize DAC_Initialize `(v  1 e 1 0 ]
+{
+"64
+} 0
+"64 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"66 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/dac.c
+[v _DAC_SetOutput DAC_SetOutput `(v  1 e 1 0 ]
+{
+[v DAC_SetOutput@inputData inputData `uc  1 a 1 wreg ]
+[v DAC_SetOutput@inputData inputData `uc  1 a 1 wreg ]
+"68
+[v DAC_SetOutput@inputData inputData `uc  1 a 1 0 ]
+"69
+} 0
+"112 C:\Users\Alcides Ramos\Desktop\Clase 26\mmc_.X\mcc_generated_files/adc.c
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+{
+[v ADC_GetConversion@channel channel `E4127  1 a 1 wreg ]
+[v ADC_GetConversion@channel channel `E4127  1 a 1 wreg ]
+"115
+[v ADC_GetConversion@channel channel `E4127  1 a 1 3 ]
+"132
+} 0

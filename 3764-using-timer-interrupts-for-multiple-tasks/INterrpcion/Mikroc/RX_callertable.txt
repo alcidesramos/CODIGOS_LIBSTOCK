@@ -1,0 +1,31 @@
+main
+	__CC2DW
+		____DoICP
+	UART1_Init
+	PWM1_Init
+	PWM1_Set_Duty
+		Mul_16X16_U
+	PWM1_Start
+	UART1_Write_Text
+		UART1_Write
+	InitTimer1
+	UART1_Read_Text
+		UART1_Data_Ready
+		UART1_Read
+	strstr
+		strlen
+		strncmp
+		strchr
+	m1derecha
+	m1izquierda
+	m1quieto
+	strtok
+		strspn
+			strchr
+		strcspn
+			strchr
+	strcpy
+	atoi
+		isdigit
+		Mul_16X16_U
+Interrupt

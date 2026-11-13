@@ -1,0 +1,276 @@
+#line 1 "C:/Users/alcid/Desktop/progra/PROGRA/Servos1timer_codigo_T1/Servos_T1.c"
+#line 1 "c:/users/alcid/desktop/progra/progra/servos1timer_codigo_t1/servos_t1.h"
+extern sfr sbit servo1;
+extern sfr sbit servo2;
+extern sfr sbit servo3;
+extern sfr sbit servo4;
+extern sfr sbit servo5;
+extern sfr sbit servo6;
+extern sfr sbit servo7;
+extern sfr sbit servo8;
+
+extern sfr sbit servo1_direction;
+extern sfr sbit servo2_direction;
+extern sfr sbit servo3_direction;
+extern sfr sbit servo4_direction;
+extern sfr sbit servo5_direction;
+extern sfr sbit servo6_direction;
+extern sfr sbit servo7_direction;
+extern sfr sbit servo8_direction;
+#line 29 "c:/users/alcid/desktop/progra/progra/servos1timer_codigo_t1/servos_t1.h"
+void init_servos(float pwm_min,float pwm_min);
+void servos_interrupcion();
+void servo_valor(char servo_num,float servo_ang);
+#line 5 "C:/Users/alcid/Desktop/progra/PROGRA/Servos1timer_codigo_T1/Servos_T1.c"
+ unsigned int servos[8];
+const unsigned long cristal=Clock_kHz();
+
+
+const float tmr1_reg=65536.0 -((cristal*2.5)/(4.0));
+const float tmr1_reg_ini=65536.0 -((cristal*1.5)/(4.0));
+const unsigned int tmr1_1_5ms=tmr1_reg_ini;
+const unsigned int tmr1_2_5ms=tmr1_reg;
+const unsigned long tmr1_periodo=65536+ tmr1_2_5ms;
+
+
+float pwm_min;
+float _m;
+float servo_tempo;
+enum servo_estado {hi_1,lo_1,hi_2,lo_2,hi_3,lo_3,hi_4,lo_4,hi_5,lo_5,hi_6,lo_6,hi_7,lo_7,hi_8,lo_8};
+char estado_servos=hi_1;
+ unsigned int int_tempo;
+
+
+void init_servos(float pwm_min_,float pwm_max)
+{
+ if (pwm_max>=2.5) pwm_max=2.49;
+
+_m=(pwm_max-pwm_min_)/180.0;
+pwm_min=pwm_min_;
+
+PEIE_bit=1;
+servo1_direction=0;
+servo2_direction=0;
+servo3_direction=0;
+servo4_direction=0;
+servo5_direction=0;
+servo6_direction=0;
+servo7_direction=0;
+servo8_direction=0;
+
+servo1=0;
+servo2=0;
+servo3=0;
+servo4=0;
+servo5=0;
+servo6=0;
+servo7=0;
+servo8=0;
+
+
+
+T1CON=0;
+
+T1CKPS1_bit=0;
+T1CKPS0_bit=0;
+
+TMR1IF_bit=0;
+TMR1L=256;
+TMR1h=250;
+TMR1IE_bit=1;
+TMR1ON_bit=1;
+
+
+servos[0]=tmr1_1_5ms;
+servos[1]=tmr1_1_5ms;
+servos[2]=tmr1_1_5ms;
+servos[3]=tmr1_1_5ms;
+servos[4]=tmr1_1_5ms;
+servos[5]=tmr1_1_5ms;
+servos[6]=tmr1_1_5ms;
+servos[7]=tmr1_1_5ms;
+
+}
+
+void servos_interrupcion()
+{
+
+ if (TMR1IF_bit==1)
+
+ { switch (estado_servos)
+ {
+
+ case hi_1:
+ {
+ servo1=1;
+ int_tempo=servos[0];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=lo_1;
+ }break;
+
+ case lo_1:
+ {
+ servo1=0;
+ int_tempo=tmr1_periodo-servos[0];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=hi_2;
+ }break;
+
+
+ case hi_2:
+ {
+ servo2=1;
+ int_tempo=servos[1];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=lo_2;
+ }break;
+
+ case lo_2:
+ {
+ servo2=0;
+ int_tempo=tmr1_periodo-servos[1];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=hi_3;
+ }break;
+
+
+ case hi_3:
+ {
+ servo3=1;
+ int_tempo=servos[2];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=lo_3;
+ }break;
+
+ case lo_3:
+ {
+ servo3=0;
+ int_tempo=tmr1_periodo-servos[2];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+
+ estado_servos=hi_4;
+ }break;
+
+
+ case hi_4:
+ {
+ servo4=1;
+ int_tempo=servos[3];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=lo_4;
+ }break;
+
+ case lo_4:
+ {
+ servo4=0;
+ int_tempo=tmr1_periodo-servos[3];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+
+ estado_servos=hi_5;
+ }break;
+
+
+ case hi_5:
+ {
+ servo5=1;
+ int_tempo=servos[4];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=lo_5;
+ }break;
+
+ case lo_5:
+ {
+ servo5=0;
+ int_tempo=tmr1_periodo-servos[4];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=hi_6;
+ }break;
+
+
+ case hi_6:
+ {
+ servo6=1;
+ int_tempo=servos[5];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=lo_6;
+ }break;
+
+ case lo_6:
+ {
+ servo6=0;
+ int_tempo=tmr1_periodo-servos[5];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=hi_7;
+ }break;
+
+
+ case hi_7:
+ {
+ servo7=1;
+ int_tempo=servos[6];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=lo_7;
+ }break;
+
+ case lo_7:
+ {
+ servo7=0;
+ int_tempo=tmr1_periodo-servos[6];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=hi_8;
+ }break;
+
+
+ case hi_8:
+ {
+ servo8=1;
+ int_tempo=servos[7];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=lo_8;
+ }break;
+
+ case lo_8:
+ {
+ servo8=0;
+ int_tempo=tmr1_periodo-servos[7];
+ tmr1h= (int_tempo >>8) & 0xff; ;
+ tmr1l= int_tempo & 0xff; ;
+ estado_servos=hi_1;
+ }break;
+
+
+
+
+ }
+
+ TMR1IF_bit=0;
+
+
+ }
+
+}
+
+
+void servo_valor(char servo_num,float servo_ang)
+{
+
+servo_tempo=(servo_ang+90.0)*_m+pwm_min;
+servo_tempo =65536.0 -((cristal*servo_tempo)/4.0);
+servos[servo_num-1]=(servo_tempo);
+
+}

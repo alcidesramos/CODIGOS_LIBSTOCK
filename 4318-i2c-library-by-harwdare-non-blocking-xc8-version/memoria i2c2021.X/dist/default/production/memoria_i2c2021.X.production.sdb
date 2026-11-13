@@ -1,0 +1,521 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1824 ]
+[d frameptr 6 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"72 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"593
+[v _utoa utoa `(i  1 s 2 utoa ]
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1368
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"8 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\I2C_ARZ.c
+[v _I2C_CONFIG_master I2C_CONFIG_master `(v  1 e 1 0 ]
+"19
+[v _I2C_WAIT I2C_WAIT `(v  1 e 1 0 ]
+"25
+[v _I2C_STARTBIT I2C_STARTBIT `(v  1 e 1 0 ]
+"33
+[v _I2C_STOPBIT I2C_STOPBIT `(v  1 e 1 0 ]
+"41
+[v _I2C_REPEATSTARTBIT I2C_REPEATSTARTBIT `(v  1 e 1 0 ]
+"49
+[v _I2C_ACKBIT I2C_ACKBIT `(v  1 e 1 0 ]
+"60
+[v _I2C_NOACKBIT I2C_NOACKBIT `(v  1 e 1 0 ]
+"75
+[v _I2C_WRITE_BYTE I2C_WRITE_BYTE `(uc  1 e 1 0 ]
+"83
+[v _I2C_READ_BYTE I2C_READ_BYTE `(uc  1 e 1 0 ]
+"61 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\main.c
+[v _memoria_i2c_write memoria_i2c_write `(v  1 e 1 0 ]
+"76
+[v _memoria_i2c_read memoria_i2c_read `(uc  1 e 1 0 ]
+"98
+[v _main main `(v  1 e 1 0 ]
+"66 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"113
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"146
+[v _putch putch `(v  1 e 1 0 ]
+"153
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"155
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"163
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"166
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"170
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"174
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"50 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"59
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"69
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+[s S68 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"546 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1824.h
+[u S77 . 1 `S68 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES77  1 e 1 @17 ]
+"1115
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1165
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S204 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1391
+[s S213 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S218 . 1 `S204 1 . 1 0 `S213 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES218  1 e 1 @149 ]
+"1502
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1561
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1619
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1952
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1997
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2319
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2668
+[v _APFCON0 APFCON0 `VEuc  1 e 1 @285 ]
+"2729
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @286 ]
+"2767
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2814
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3054
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3074
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3110
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"3160
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3193
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S110 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3210
+[u S119 . 1 `S110 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES119  1 e 1 @413 ]
+"3255
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S89 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3272
+[u S98 . 1 `S89 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES98  1 e 1 @414 ]
+"3317
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3369
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3427
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"3477
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"3515
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
+"3591
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+"3718
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+"3983
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @534 ]
+"6419
+[v _ACKDT ACKDT `VEb  1 e 0 @4277 ]
+"6422
+[v _ACKEN ACKEN `VEb  1 e 0 @4276 ]
+"6425
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @4278 ]
+"7100
+[v _LATC5 LATC5 `VEb  1 e 0 @2165 ]
+"7280
+[v _PEN PEN `VEb  1 e 0 @4274 ]
+"7358
+[v _RCEN RCEN `VEb  1 e 0 @4275 ]
+"7373
+[v _RSEN RSEN `VEb  1 e 0 @4273 ]
+"7415
+[v _SEN SEN `VEb  1 e 0 @4272 ]
+"7487
+[v _SSP1IF SSP1IF `VEb  1 e 0 @139 ]
+"7490
+[v _SSPEN SSPEN `VEb  1 e 0 @4269 ]
+"55 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"57 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\main.c
+[v _leido leido `uc  1 e 1 0 ]
+[s S22 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"52 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\mcc_generated_files/eusart.c
+[u S27 . 1 `S22 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES27  1 e 1 0 ]
+"58
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"98 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"153
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.4v  1 a 1 71 ]
+"5
+[v printf@fmt fmt `*.25DCuc  1 p 2 64 ]
+"13
+} 0
+"1368 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+[s S847 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.1S847  1 a 1 wreg ]
+"1371
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 62 ]
+"1368
+[v vfprintf@fp fp `*.1S847  1 a 1 wreg ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 56 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 58 ]
+"1373
+"1368
+[v vfprintf@fp fp `*.1S847  1 a 1 61 ]
+"1382
+} 0
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+[s S847 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.1S847  1 a 1 wreg ]
+"675
+[v vfpfcnvrt@llu llu `uo  1 a 8 47 ]
+"670
+[v vfpfcnvrt@fp fp `*.1S847  1 a 1 wreg ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 40 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 41 ]
+"680
+"670
+[v vfpfcnvrt@fp fp `*.1S847  1 a 1 55 ]
+"1365
+} 0
+"593
+[v _utoa utoa `(i  1 s 2 utoa ]
+{
+[s S847 _IO_FILE 0 ]
+[v utoa@fp fp `*.1S847  1 a 1 wreg ]
+"596
+[v utoa@n n `uo  1 a 8 30 ]
+"595
+[v utoa@i i `i  1 a 2 38 ]
+[v utoa@w w `i  1 a 2 28 ]
+[v utoa@p p `i  1 a 2 25 ]
+"593
+[v utoa@fp fp `*.1S847  1 a 1 wreg ]
+[v utoa@d d `uo  1 p 8 16 ]
+"599
+"593
+[v utoa@fp fp `*.1S847  1 a 1 27 ]
+"619
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+[s S847 _IO_FILE 0 ]
+[v pad@fp fp `*.1S847  1 a 1 wreg ]
+"74
+[v pad@w w `i  1 a 2 10 ]
+[v pad@i i `i  1 a 2 8 ]
+"72
+[v pad@fp fp `*.1S847  1 a 1 wreg ]
+[v pad@buf buf `*.4uc  1 p 1 4 ]
+[v pad@p p `i  1 p 2 5 ]
+"77
+"72
+[v pad@fp fp `*.1S847  1 a 1 12 ]
+"95
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v strlen@a a `*.4DCuc  1 a 1 3 ]
+"5
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v strlen@s s `*.4DCuc  1 a 1 4 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+[v fputs@s s `*.4DCuc  1 a 1 wreg ]
+"11
+[v fputs@i i `i  1 a 2 1 ]
+"10
+[v fputs@c c `uc  1 a 1 0 ]
+"8
+[v fputs@s s `*.4DCuc  1 a 1 wreg ]
+[s S830 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.1S830  1 p 1 10 ]
+"13
+[v fputs@s s `*.4DCuc  1 a 1 3 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 2 ]
+[s S830 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.1S830  1 p 1 4 ]
+"21
+} 0
+"146 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\mcc_generated_files/eusart.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 wreg ]
+"148
+[v putch@txData txData `uc  1 a 1 1 ]
+"149
+} 0
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 0 ]
+"139
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+{
+"12
+[v ___lomod@counter counter `uc  1 a 1 1 ]
+"7
+[v ___lomod@divisor divisor `uo  1 p 8 0 ]
+[v ___lomod@dividend dividend `uo  1 p 8 8 ]
+"27
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v ___lodiv@quotient quotient `uo  1 a 8 1 ]
+"13
+[v ___lodiv@counter counter `uc  1 a 1 9 ]
+"7
+[v ___lodiv@divisor divisor `uo  1 p 8 0 ]
+[v ___lodiv@dividend dividend `uo  1 p 8 8 ]
+"32
+} 0
+"61 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\main.c
+[v _memoria_i2c_write memoria_i2c_write `(v  1 e 1 0 ]
+{
+[v memoria_i2c_write@dir_mem dir_mem `ui  1 p 2 1 ]
+[v memoria_i2c_write@dato_mem dato_mem `uc  1 p 1 3 ]
+"74
+} 0
+"76
+[v _memoria_i2c_read memoria_i2c_read `(uc  1 e 1 0 ]
+{
+"78
+[v memoria_i2c_read@i2c_dato_read i2c_dato_read `uc  1 a 1 6 ]
+"76
+[v memoria_i2c_read@dir_mem dir_mem `ui  1 p 2 3 ]
+"92
+} 0
+"75 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\I2C_ARZ.c
+[v _I2C_WRITE_BYTE I2C_WRITE_BYTE `(uc  1 e 1 0 ]
+{
+[v I2C_WRITE_BYTE@dato_i2c dato_i2c `uc  1 a 1 wreg ]
+[v I2C_WRITE_BYTE@dato_i2c dato_i2c `uc  1 a 1 wreg ]
+"77
+[v I2C_WRITE_BYTE@dato_i2c dato_i2c `uc  1 a 1 0 ]
+"81
+} 0
+"19
+[v _I2C_WAIT I2C_WAIT `(v  1 e 1 0 ]
+{
+"23
+} 0
+"33
+[v _I2C_STOPBIT I2C_STOPBIT `(v  1 e 1 0 ]
+{
+"39
+} 0
+"25
+[v _I2C_STARTBIT I2C_STARTBIT `(v  1 e 1 0 ]
+{
+"31
+} 0
+"41
+[v _I2C_REPEATSTARTBIT I2C_REPEATSTARTBIT `(v  1 e 1 0 ]
+{
+"46
+} 0
+"83
+[v _I2C_READ_BYTE I2C_READ_BYTE `(uc  1 e 1 0 ]
+{
+[v I2C_READ_BYTE@ack ack `uc  1 a 1 wreg ]
+"85
+[v I2C_READ_BYTE@i2c_dato_read1 i2c_dato_read1 `uc  1 a 1 2 ]
+"83
+[v I2C_READ_BYTE@ack ack `uc  1 a 1 wreg ]
+"87
+[v I2C_READ_BYTE@ack ack `uc  1 a 1 1 ]
+"95
+} 0
+"60
+[v _I2C_NOACKBIT I2C_NOACKBIT `(v  1 e 1 0 ]
+{
+"68
+} 0
+"49
+[v _I2C_ACKBIT I2C_ACKBIT `(v  1 e 1 0 ]
+{
+"57
+} 0
+"50 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"57
+} 0
+"69
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"55 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"59 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"67
+} 0
+"66 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"170
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"172
+} 0
+"166
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"168
+} 0
+"174
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"176
+} 0
+"8 C:\Users\Alcides Ramos\Desktop\I2C 2021\xc8\memoria i2c2021.X\I2C_ARZ.c
+[v _I2C_CONFIG_master I2C_CONFIG_master `(v  1 e 1 0 ]
+{
+[v I2C_CONFIG_master@i2c_velo i2c_velo `ul  1 p 4 0 ]
+"17
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0

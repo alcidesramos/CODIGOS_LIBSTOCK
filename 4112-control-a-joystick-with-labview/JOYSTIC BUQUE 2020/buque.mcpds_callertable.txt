@@ -1,0 +1,53 @@
+main
+	PPS_Mapping
+		_PPS_Mapping
+			Unlock_IOLOCK
+			Lock_IOLOCK
+	pwm_init_basico
+	config_uart1_trama
+		UART1_Init
+			Get_Fosc_kHz
+			Get_Fosc_Per_Cyc
+			Delay_100ms
+			_Multiply_32x32
+			_Modulus_32x32
+			_Divide_32x32
+	UART1_Write_Text
+		UART1_Write
+	habilita
+	procesa_rx1
+		strcpy
+		strtok
+			strspn
+				strchr
+			strcspn
+				strchr
+		atof
+			strtod
+				isspace
+				isdigit
+				_Multiply_32x32
+				_Long2Float
+				_Compare_Le_Fp
+					_Compare_Fp
+				_Mul_FP
+				_Compare_Ge_Fp
+					_Compare_Fp
+		atoi
+			isdigit
+		servo1
+			_Mul_FP
+			_AddSub_FP
+			_Float2Longint
+		servo2
+			_Mul_FP
+			_AddSub_FP
+			_Float2Longint
+		_Mul_FP
+		_Div_FP
+	memset
+INT_TRAMA_RX1
+aritmetrico
+pilaInt
+direccionInt
+osciladorInt

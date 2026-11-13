@@ -1,0 +1,208 @@
+{
+  "title" : "",
+  "description" : "",
+  "author" : "",
+  "width" : 1364.0,
+  "height" : 728.0,
+  "version" : "0.5",
+  "editRate" : 30,
+  "authoringClientName" :  {
+    "name" : "Camtasia Studio",
+    "platform" : "Windows",
+    "version" : "9.0"
+  },
+  "sourceBin" : [
+    {
+      "id" : 1,
+      "src" : "C:\\Users\\Alcides Ramos\\Documents\\Camtasia Studio\\Rec 10-23-18.trec",
+      "rect" : [0, 0, 1364, 728],
+      "lastMod" : "20181024T023251",
+      "sourceTracks" : [
+        {
+          "range" : [0, 65437],
+          "type" : 0,
+          "editRate" : 30,
+          "trackRect" : [0, 0, 1364, 728],
+          "sampleRate" : 29,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "metaData" : "Rec 10-23-18.trec;"
+        },
+        {
+          "range" : [0, 96183296],
+          "type" : 2,
+          "editRate" : 44100,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    }
+  ],
+  "timeline" : {
+    "id" : 2,
+    "sceneTrack" : {
+      "scenes" : [
+        {
+          "duration" : 2181.03333333333,
+          "title" : "",
+          "type" : "",
+          "csml" : {
+            "tracks" : [
+              {
+                "trackIndex" : 0,
+                "medias" : [
+                  {
+                    "id" : 3,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 4,
+                          "_type" : "ScreenVMFile",
+                          "src" : 1,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "Rec 10-23-18"
+                          },
+                          "parameters" : {
+                            "cursorScale" : {
+                              "type" : "double",
+                              "defaultValue" : 1.0,
+                              "interp" : "linr"
+                            },
+                            "cursorOpacity" : {
+                              "type" : "double",
+                              "defaultValue" : 1.0,
+                              "interp" : "linr"
+                            }
+                          },
+                          "effects" : [
+                              {
+                                "effectName" : "CursorHilight",
+                                "category" : "categoryCursorEffects",
+                                "parameters" : {
+                                  "blur" : 0.1,
+                                  "color-alpha" : 0.75,
+                                  "color-blue" : 0.0,
+                                  "color-green" : 1.0,
+                                  "color-red" : 1.0,
+                                  "radius" : 15.0
+                                },
+                                "metadata" : {
+                                  "effectIndex" : "0"
+                                }
+                              }
+                          ],
+                          "start" : 0,
+                          "duration" : 65431,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 65431,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 5,
+                          "_type" : "AMFile",
+                          "src" : 1,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "sampleRate" : 44100,
+                            "bitDepth" : 16,
+                            "gain" : 1.0,
+                            "mixToMono" : false
+                          },
+                            "channelNumber" : "0,1",
+                          "effects" : [
+
+                          ],
+                          "start" : 0,
+                          "duration" : 65431,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 65431,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 0,
+                    "duration" : 65431,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 65431,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "AutoAppliedSmartFocus" : "False",
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 1,
+                "medias" : [
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "trackAttributes" : [
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      }
+    ],
+    "captionAttributes" : {
+      "enabled" : true,
+      "fontName" : "Arial",
+      "fontSize" : 43,
+      "backgroundColor" : [ 0, 0, 0, 191],
+      "foregroundColor" : [ 255, 255, 255, 255],
+      "lang" : "en",
+      "alignment" : 0,
+      "defaultFontSize" : true,
+      "opacity" : 0.5,
+      "backgroundEnabled" : true,
+      "backgroundOnlyAroundText" : true
+    },
+    "backgroundColor" : [ 0, 0, 0, 255]
+  },
+  "metadata" : {
+    "AutoSaveFile" : "C:\\Users\\Alcides Ramos\\AppData\\Local\\TechSmith\\Camtasia Studio\\9.0\\Auto-Saves\\Untitled Project2bb7b71.autosave.tscproj",
+    "CanvasZoom" : 45,
+    "Date" : "2018-10-23 08:11:21 p. m.",
+    "IsAutoSave" : "0",
+    "Language" : "ENU",
+    "ProfileName" : "",
+    "ProjectDimensionsChanged" : "1",
+    "audioNarrationNotes" : "",
+    "calloutStyle" : "Basic",
+    "canvasDetached" : "False",
+    "canvasPositionHeight" : "0",
+    "canvasPositionLeft" : "0",
+    "canvasPositionTop" : "0",
+    "canvasPositionWidth" : "0"
+  }
+}

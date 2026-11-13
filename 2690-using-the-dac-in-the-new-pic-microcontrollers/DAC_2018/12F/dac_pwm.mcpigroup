@@ -1,0 +1,6 @@
+[PROJECTS]
+Count=2
+Project0=..\..\DAC2018\PIC16F\dac16f.mcppi
+Project1=dac_pwm.mcppi
+[ActiveProject]
+Index=1

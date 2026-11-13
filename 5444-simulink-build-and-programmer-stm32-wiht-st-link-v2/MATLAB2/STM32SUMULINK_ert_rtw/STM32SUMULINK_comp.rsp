@@ -1,0 +1,18 @@
+-IC:/Users/alcid/Desktop/STMSIMULINK/MATLAB2
+-IC:/Users/alcid/Desktop/STMSIMULINK/MATLAB2/STM32SUMULINK_ert_rtw
+-IC:/Program\ Files/MATLAB/R2023a/extern/include
+-IC:/Program\ Files/MATLAB/R2023a/simulink/include
+-IC:/Program\ Files/MATLAB/R2023a/rtw/c/src
+-IC:/Program\ Files/MATLAB/R2023a/rtw/c/src/ext_mode/common
+-IC:/Program\ Files/MATLAB/R2023a/rtw/c/ert
+-IC:/Program\ Files/MATLAB/R2023a/toolbox/target/shared/armcortexmbase/scheduler/include
+-IC:/Program\ Files/MATLAB/R2023a/toolbox/target/shared/armcortexmbase/xcp/include
+-IC:/Program\ Files/MATLAB/R2023a/rtw/c/src/ext_mode/serial
+-IC:/ProgramData/MATLAB/SupportPackages/R2023a/toolbox/shared/supportpackages/stm32/include
+-IC:/Program\ Files/MATLAB/R2023a/toolbox/target/shared/svd/common/include
+-IC:/ProgramData/MATLAB/SupportPackages/R2023a/3P.instrset/cmsis.instrset/CMSIS/Include
+-IC:/Users/alcid/Desktop/STMSIMULINK/MATLAB2/Drivers/STM32F4xx_HAL_Driver/Inc
+-IC:/Users/alcid/Desktop/STMSIMULINK/MATLAB2/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
+-IC:/Users/alcid/Desktop/STMSIMULINK/MATLAB2/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+-IC:/Users/alcid/Desktop/STMSIMULINK/MATLAB2/Drivers/CMSIS/Include
+-IC:/Users/alcid/Desktop/STMSIMULINK/MATLAB2/Core/Inc

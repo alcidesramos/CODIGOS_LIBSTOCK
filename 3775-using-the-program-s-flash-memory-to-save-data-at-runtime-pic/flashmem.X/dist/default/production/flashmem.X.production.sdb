@@ -1,0 +1,239 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15324 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"79 C:\Users\Alcides Ramos\Desktop\FLASHPIC\flashmem.X\flashmem.c
+[v _main main `(v  1 e 1 0 ]
+"59 C:\Users\Alcides Ramos\Desktop\FLASHPIC\flashmem.X\flashmemory.c
+[v _FLASH_Read FLASH_Read `(ui  1 e 2 0 ]
+"79
+[v _FLASH_Write FLASH_Write `(v  1 e 1 0 ]
+"100
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+"156
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+"184
+[v _FLASH_Write_Int FLASH_Write_Int `(v  1 e 1 0 ]
+"215
+[v _FLASH_Read_Int FLASH_Read_Int `(ui  1 e 2 0 ]
+"259
+[v _FLASH_Write_Long FLASH_Write_Long `(v  1 e 1 0 ]
+"297
+[v _FLASH_Read_Long FLASH_Read_Long `(ul  1 e 4 0 ]
+"370
+[v _FLASH_Write_Float FLASH_Write_Float `(v  1 e 1 0 ]
+"407
+[v _FLASH_Read_Float FLASH_Read_Float `(f  1 e 4 0 ]
+"479
+[v _FLASH_Write_Texto FLASH_Write_Texto `(v  1 e 1 0 ]
+"515
+[v _FLASH_Read_Texto FLASH_Read_Texto `(v  1 e 1 0 ]
+"546 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f15324.h
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"9282
+[v _NVMADRL NVMADRL `VEuc  1 e 1 @2074 ]
+"9344
+[v _NVMADRH NVMADRH `VEuc  1 e 1 @2075 ]
+"9407
+[v _NVMDATL NVMDATL `VEuc  1 e 1 @2076 ]
+"9469
+[v _NVMDATH NVMDATH `VEuc  1 e 1 @2077 ]
+[s S105 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 NVMREGS 1 0 :1:6 
+]
+"9535
+[u S113 . 1 `S105 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES113  1 e 1 @2078 ]
+"9575
+[v _NVMCON2 NVMCON2 `VEuc  1 e 1 @2079 ]
+"19755
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"60 C:\Users\Alcides Ramos\Desktop\FLASHPIC\flashmem.X\flashmem.c
+[v _buffer buffer `[32]ui  1 e 64 0 ]
+"69
+[v _dato dato `ui  1 e 2 0 ]
+"70
+[v _dato_l dato_l `ul  1 e 4 0 ]
+"71
+[v _decimal decimal `f  1 e 4 0 ]
+"73
+[v _texto texto `[32]uc  1 e 32 0 ]
+"79
+[v _main main `(v  1 e 1 0 ]
+{
+"114
+} 0
+"479 C:\Users\Alcides Ramos\Desktop\FLASHPIC\flashmem.X\flashmemory.c
+[v _FLASH_Write_Texto FLASH_Write_Texto `(v  1 e 1 0 ]
+{
+"483
+[v FLASH_Write_Texto@dir_ini dir_ini `ui  1 a 2 8 ]
+"486
+[v FLASH_Write_Texto@i i `uc  1 a 1 11 ]
+"485
+[v FLASH_Write_Texto@offset offset `uc  1 a 1 10 ]
+"479
+[v FLASH_Write_Texto@flash_dir flash_dir `ui  1 p 2 0 ]
+[v FLASH_Write_Texto@Buf Buf `*.4ui  1 p 1 2 ]
+[v FLASH_Write_Texto@data_flash data_flash `*.25uc  1 p 2 3 ]
+"512
+} 0
+"259
+[v _FLASH_Write_Long FLASH_Write_Long `(v  1 e 1 0 ]
+{
+"264
+[v FLASH_Write_Long@dir_ini dir_ini `ui  1 a 2 10 ]
+"266
+[v FLASH_Write_Long@offset offset `uc  1 a 1 14 ]
+"261
+[v FLASH_Write_Long@punte punte `*.4uc  1 a 1 13 ]
+"267
+[v FLASH_Write_Long@i i `uc  1 a 1 12 ]
+"259
+[v FLASH_Write_Long@flash_dir flash_dir `ui  1 p 2 0 ]
+[v FLASH_Write_Long@Buf Buf `*.4ui  1 p 1 2 ]
+[v FLASH_Write_Long@data_flash data_flash `ul  1 p 4 3 ]
+"295
+} 0
+"184
+[v _FLASH_Write_Int FLASH_Write_Int `(v  1 e 1 0 ]
+{
+"189
+[v FLASH_Write_Int@dir_ini dir_ini `ui  1 a 2 8 ]
+"192
+[v FLASH_Write_Int@i i `uc  1 a 1 12 ]
+"191
+[v FLASH_Write_Int@offset offset `uc  1 a 1 11 ]
+"186
+[v FLASH_Write_Int@punte punte `*.4uc  1 a 1 10 ]
+"184
+[v FLASH_Write_Int@flash_dir flash_dir `ui  1 p 2 0 ]
+[v FLASH_Write_Int@Buf Buf `*.4ui  1 p 1 2 ]
+[v FLASH_Write_Int@data_flash data_flash `ui  1 p 2 3 ]
+"213
+} 0
+"370
+[v _FLASH_Write_Float FLASH_Write_Float `(v  1 e 1 0 ]
+{
+"375
+[v FLASH_Write_Float@dir_ini dir_ini `ui  1 a 2 10 ]
+"377
+[v FLASH_Write_Float@offset offset `uc  1 a 1 14 ]
+"372
+[v FLASH_Write_Float@punte punte `*.4uc  1 a 1 13 ]
+"378
+[v FLASH_Write_Float@i i `uc  1 a 1 12 ]
+"370
+[v FLASH_Write_Float@flash_dir flash_dir `ui  1 p 2 0 ]
+[v FLASH_Write_Float@Buf Buf `*.4ui  1 p 1 2 ]
+[v FLASH_Write_Float@data_flash data_flash `f  1 p 4 3 ]
+"405
+} 0
+"79
+[v _FLASH_Write FLASH_Write `(v  1 e 1 0 ]
+{
+"82
+[v FLASH_Write@dir_ini dir_ini `ui  1 a 2 6 ]
+"85
+[v FLASH_Write@i i `uc  1 a 1 8 ]
+"84
+[v FLASH_Write@offset offset `uc  1 a 1 5 ]
+"79
+[v FLASH_Write@flash_dir flash_dir `ui  1 p 2 0 ]
+[v FLASH_Write@Buf Buf `*.4ui  1 p 1 2 ]
+[v FLASH_Write@data_flash data_flash `ui  1 p 2 3 ]
+"98
+} 0
+"100
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+{
+"102
+[v FLASH_WriteBlock@dir_aux dir_aux `ui  1 a 2 9 ]
+"104
+[v FLASH_WriteBlock@i i `uc  1 a 1 12 ]
+"103
+[v FLASH_WriteBlock@GIE_Value GIE_Value `uc  1 a 1 11 ]
+"100
+[v FLASH_WriteBlock@FLASH_DIR FLASH_DIR `ui  1 p 2 3 ]
+[v FLASH_WriteBlock@flashWordArray flashWordArray `*.4ui  1 p 1 5 ]
+"154
+} 0
+"156
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+{
+"158
+[v FLASH_EraseBlock@GIE_Value GIE_Value `uc  1 a 1 2 ]
+"156
+[v FLASH_EraseBlock@startAddr startAddr `ui  1 p 2 0 ]
+"181
+} 0
+"59
+[v _FLASH_Read FLASH_Read `(ui  1 e 2 0 ]
+{
+"61
+[v FLASH_Read@GIE_Value GIE_Value `uc  1 a 1 2 ]
+"59
+[v FLASH_Read@flash_dir flash_dir `ui  1 p 2 0 ]
+"75
+} 0
+"515
+[v _FLASH_Read_Texto FLASH_Read_Texto `(v  1 e 1 0 ]
+{
+"517
+[v FLASH_Read_Texto@dato dato `ui  1 a 2 4 ]
+"520
+[v FLASH_Read_Texto@GIE_Value GIE_Value `uc  1 a 1 6 ]
+"515
+[v FLASH_Read_Texto@flash_dir flash_dir `ui  1 p 2 0 ]
+[v FLASH_Read_Texto@data_flash data_flash `*.4uc  1 p 1 2 ]
+"548
+} 0
+"297
+[v _FLASH_Read_Long FLASH_Read_Long `(ul  1 e 4 0 ]
+{
+"301
+[v FLASH_Read_Long@leido leido `ul  1 a 4 6 ]
+"299
+[v FLASH_Read_Long@punte punte `*.1uc  1 a 1 10 ]
+"303
+[v FLASH_Read_Long@GIE_Value GIE_Value `uc  1 a 1 5 ]
+"297
+[v FLASH_Read_Long@flash_dir flash_dir `ui  1 p 2 0 ]
+"368
+} 0
+"215
+[v _FLASH_Read_Int FLASH_Read_Int `(ui  1 e 2 0 ]
+{
+"219
+[v FLASH_Read_Int@leido leido `ui  1 a 2 5 ]
+"217
+[v FLASH_Read_Int@punte punte `*.1uc  1 a 1 4 ]
+"221
+[v FLASH_Read_Int@GIE_Value GIE_Value `uc  1 a 1 3 ]
+"215
+[v FLASH_Read_Int@flash_dir flash_dir `ui  1 p 2 0 ]
+"257
+} 0
+"407
+[v _FLASH_Read_Float FLASH_Read_Float `(f  1 e 4 0 ]
+{
+"411
+[v FLASH_Read_Float@leido leido `f  1 a 4 6 ]
+"409
+[v FLASH_Read_Float@punte punte `*.1uc  1 a 1 10 ]
+"413
+[v FLASH_Read_Float@GIE_Value GIE_Value `uc  1 a 1 5 ]
+"407
+[v FLASH_Read_Float@flash_dir flash_dir `ui  1 p 2 0 ]
+"476
+} 0

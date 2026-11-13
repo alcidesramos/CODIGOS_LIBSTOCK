@@ -1,0 +1,205 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027-036 servos
+037-03A cristal
+03B-03E tmr1_reg
+03F-042 tmr1_reg_ini
+043-044 tmr1_1_5ms
+045-046 tmr1_2_5ms
+047-04A tmr1_periodo
+04B-04E pwm_min
+04F-052 _m
+053-056 servo_tempo
+057     estado_servos
+058     servo_valor.servo_num
+058-05B init_servos.pwm_min_
+058     @cinit1.@SCRATCH1
+059-05C servo_valor.servo_ang
+059     @cinit1.@SCRATCH2
+05A     @cinit1.@SCRATCH3
+05B     @cinit1.@SCRATCH4
+05C-05F init_servos.pwm_max_
+05D-060 @DTOF.P1
+05D     servo_valor.@SCRATCH1
+05E     servo_valor.@SCRATCH2
+05F-062 @SFTOI.P1
+05F     servo_valor.@SCRATCH3
+060-063 @FLT.P1
+060     init_servos.@SCRATCH1
+060     servo_valor.@SCRATCH4
+061-064 @MULFF.P1
+061-064 @ADDFF.P2
+061     init_servos.@SCRATCH2
+062     init_servos.@SCRATCH3
+063     init_servos.@SCRATCH4
+064-067 @DIVFF.P1
+064-067 @FLT.P2
+065-068 @MULFF.P1
+065-068 @ADDFF.P2
+068-06B @DIVFF.P1
+068     @FLT.@SCRATCH1
+069     @MULFF.@SCRATCH1
+069     @ADDFF.@SCRATCH1
+069     @FLT.@SCRATCH2
+06A     @MULFF.@SCRATCH2
+06A     @ADDFF.@SCRATCH2
+06B     @MULFF.@SCRATCH3
+06B     @ADDFF.@SCRATCH3
+06C     @MULFF.@SCRATCH4
+06C     @DIVFF.@SCRATCH1
+06C     @ADDFF.@SCRATCH4
+06D     @MULFF.@SCRATCH5
+06D     @DIVFF.@SCRATCH2
+06D     @ADDFF.@SCRATCH5
+06E     @DIVFF.@SCRATCH3
+06E     @ADDFF.@SCRATCH6
+06F     @DIVFF.@SCRATCH4
+06F     @ADDFF.@SCRATCH7
+070     @DIVFF.@SCRATCH5
+070     @ADDFF.@SCRATCH8
+071     @DIVFF.@SCRATCH6
+072     servos_interrupcion.@SCRATCH1
+073     servos_interrupcion.@SCRATCH2
+074     servos_interrupcion.@SCRATCH3
+075     servos_interrupcion.@SCRATCH4
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+107F     @INTERRUPT_AREA
+10FF     @INTERRUPT_AREA
+117F     @INTERRUPT_AREA
+11FF     @INTERRUPT_AREA
+127F     @INTERRUPT_AREA
+12FF     @INTERRUPT_AREA
+137F     @INTERRUPT_AREA
+13FF     @INTERRUPT_AREA
+147F     @INTERRUPT_AREA
+14FF     @INTERRUPT_AREA
+157F     @INTERRUPT_AREA
+15FF     @INTERRUPT_AREA
+167F     @INTERRUPT_AREA
+16FF     @INTERRUPT_AREA
+177F     @INTERRUPT_AREA
+17FF     @INTERRUPT_AREA
+187F     @INTERRUPT_AREA
+18FF     @INTERRUPT_AREA
+197F     @INTERRUPT_AREA
+19FF     @INTERRUPT_AREA
+1A7F     @INTERRUPT_AREA
+1AFF     @INTERRUPT_AREA
+1B7F     @INTERRUPT_AREA
+1BFF     @INTERRUPT_AREA
+1C7F     @INTERRUPT_AREA
+1CFF     @INTERRUPT_AREA
+1D7F     @INTERRUPT_AREA
+1DFF     @INTERRUPT_AREA
+1E7F     @INTERRUPT_AREA
+1EFF     @INTERRUPT_AREA
+1F7F     @INTERRUPT_AREA
+1FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+000031  servos_interrupcion
+0001B0  @goto18115
+0001C4  TIMER1_isr
+0001C9  @DTOF
+0001E4  @MULFF
+000259  @DIVFF
+000323  @ADDFF
+000464  @SFTOI
+000483  init_servos
+000491  @FLT
+00055F  servo_valor
+00060A  MAIN
+00060A  @cinit1
+0006C5  @cinit2
+
+Project Directory:
+    C:\Users\Alcides_Ramos\Desktop\picc servos\servosccs\
+
+Project Files:
+    servoscc.c                                              [17-jul.-18 20:44  CRC=08AC552C]
+    servoscc.h                                              [17-jul.-18 20:36  CRC=4FA5E6CA]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [20-oct.-17 15:19  CRC=30AB9D16]
+    Servos_T1.h                                             [17-jul.-18 20:47  CRC=F25B829F]
+
+Source signature=6DB4DE4A
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=AA19
+
+Units:
+    servoscc (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   servoscc.xsym
+    Errors:      servoscc.err
+    Ext Symbols: servoscc.esym
+    INHX8:       servoscc.hex
+    Symbols:     servoscc.sym
+    List:        servoscc.lst
+    Debug/COFF:  servoscc.cof
+    Project:     servoscc.ccspjt
+    Call Tree:   servoscc.tre
+    Statistics:  servoscc.STA

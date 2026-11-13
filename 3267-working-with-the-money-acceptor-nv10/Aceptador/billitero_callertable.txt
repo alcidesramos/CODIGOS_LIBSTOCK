@@ -1,0 +1,17 @@
+main
+	__CC2DW
+	UART1_Init
+	UART1_Write_Text
+		UART1_Write
+	billetero
+		sprinti
+			_doprnti
+				Set_Flgs
+				isdigit
+				Mul_16X16_U
+				Do_Fill
+				Div_16X16_U
+		Mul_16X16_U
+		UART1_Write_Text
+			UART1_Write
+interrpciones

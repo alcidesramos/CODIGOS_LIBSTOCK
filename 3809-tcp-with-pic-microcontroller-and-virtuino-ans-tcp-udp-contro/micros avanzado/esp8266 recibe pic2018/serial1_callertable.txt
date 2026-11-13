@@ -1,0 +1,32 @@
+main
+	__CC2DW
+	UART1_Init
+	PWM1_Init
+	PWM1_Set_Duty
+		Mul_16X16_U
+	PWM1_Start
+	m1quieto
+	UART1_Write_Text
+		UART1_Write
+	procesarx
+		strstr
+			strlen
+			strncmp
+			strchr
+		m1derecha
+		m1izquierda
+		m1quieto
+		strtok
+			strspn
+				strchr
+			strcspn
+				strchr
+		strcpy
+		atoi
+			isdigit
+			Mul_16X16_U
+		PWM1_Set_Duty
+			Mul_16X16_U
+	memset
+Interrpcion
+	UART1_Read

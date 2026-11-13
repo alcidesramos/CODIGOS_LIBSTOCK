@@ -1,0 +1,11 @@
+POST /api/v1.6/devices/pruebas/?token=BBFF-mTsH9IHOIbabCuZfmbp87JI6izEzWD HTTP/1.1<LF>Host: things.ubidots.com<LF>Content-Type: application/json<LF>Content-Length: 30<LF><LF>
+
+{"led": 1,"temperatura": 10.2}
+
+
+
+GET /api/v1.6/devices/pruebas/pwm/values?page_size=1&token=BBFF-mTsH9IHOIbabCuZfmbp87JI6izEzWD HTTP/1.1<LF>Host: 
+Host: things.ubidots.com<LF><LF>
+
+respuesta
+

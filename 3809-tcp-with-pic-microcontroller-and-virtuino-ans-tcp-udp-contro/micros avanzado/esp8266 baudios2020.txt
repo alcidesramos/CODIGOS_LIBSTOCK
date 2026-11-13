@@ -1,0 +1,9 @@
+
+AT+CIOBAUD=9600 <cr><lf>
+
+AT+UART_DEF=9600,8,1,0,0
+
+<cr><lf>+
+
+AT+RESTORE<cr><lf>
+AT+UART_DEF=115200,8,1,0,0<cr><lf>

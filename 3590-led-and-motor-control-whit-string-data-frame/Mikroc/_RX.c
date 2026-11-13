@@ -1,0 +1,97 @@
+#define led RC0_bit
+
+#define led1 RC5_bit
+#define led2 RC4_bit
+
+//pines de direccion del motor
+#define m11 RB0_bit
+#define m12 RB1_bit
+
+//variables para capturar la trama
+char trama_rx[30];
+char procesa[30];
+
+char dato_rx;
+
+//funcion para que gira a la derecha
+void m1derecha()
+{
+m11=1;
+m12=0;
+}
+
+void m1izquierda()
+{
+m11=0;
+m12=1;
+
+}
+
+void m1quieto()
+{
+m11=0;
+m12=0;
+}
+
+
+void main() 
+{
+// salida
+TRISB=0 ;
+TRISC=0;
+TRISC7_bit=1; // enbtrada rx
+
+UART1_Init(9600);
+PWM1_Init(300);
+PWM1_Set_Duty(127);
+PWM1_Start();
+  UART1_Write_Text("HOLA MUNDO");
+  RCEN_bit=1; // habilita la recepcion continua
+  
+  while (1)
+  {
+    // lee la trama hasta llegue el * o 30 datos
+        UART1_read_Text(trama_rx,"*",30);   //  semibloqueante
+        if (strstr(trama_rx,"led1="))      //led1=on*
+             {
+             if (strstr(trama_rx,"on")) led1=1;
+            else led1=0;
+            }
+        
+        else if (strstr(trama_rx,"led2="))      //led1=on*
+             {
+             if (strstr(trama_rx,"on")) led2=1;
+            else led2=0;
+            }
+            
+              else if (strstr(trama_rx,"m1der"))  m1derecha();
+            else if (strstr(trama_rx,"m1izq"))  m1izquierda();
+        else if (strstr(trama_rx,"m1stop"))  m1quieto();
+        
+          //si llega es la velocidad del motor
+
+
+    else if (strstr(trama_rx,"m1pwm="))        //m1pwm=90*
+    {
+        strcpy(procesa, strtok(trama_rx, "="));  //inicia captura de tokens desde el =
+        strcpy(procesa, strtok(0, "*"));  //captura hasta el /
+        //pasa la cadena a  numero
+        dato_rx=atoi(procesa);
+        PWM1_Set_Duty(dato_rx);// aplica la velocidad al pwm
+
+
+    }
+
+
+
+
+  
+  led=!led;
+  Delay_ms(500);
+  
+  }
+
+
+
+
+}

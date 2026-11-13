@@ -1,0 +1,6 @@
+[PROJECTS]
+Count=2
+Project0=..\..\..\..\..\ARZ\Mikroelectronica\luces10_2018\basico 16f1824.mcppi
+Project1=ULTRASONICO.mcppi
+[ActiveProject]
+Index=1

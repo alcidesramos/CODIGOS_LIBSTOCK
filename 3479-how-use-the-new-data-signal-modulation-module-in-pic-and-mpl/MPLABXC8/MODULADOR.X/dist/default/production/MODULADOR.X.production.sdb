@@ -1,0 +1,349 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1824 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"51 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"58 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/dsm.c
+[v _DSM_Initialize DSM_Initialize `(v  1 e 1 0 ]
+"64 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/epwm1.c
+[v _EPWM1_Initialize EPWM1_Initialize `(v  1 e 1 0 ]
+"66 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"113
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"153
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"155
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"163
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"166
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"170
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"174
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"50 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"64
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"78
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+"62 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"62 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/tmr6.c
+[v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
+[s S219 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"546 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1824.h
+[u S228 . 1 `S219 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES228  1 e 1 @17 ]
+[s S147 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TMR4IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TMR6IF 1 0 :1:3 
+`uc 1 CCP3IF 1 0 :1:4 
+`uc 1 CCP4IF 1 0 :1:5 
+]
+"657
+[u S154 . 1 `S147 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES154  1 e 1 @19 ]
+"898
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"918
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"938
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S241 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+"959
+[s S249 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+[u S253 . 1 `S241 1 . 1 0 `S249 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES253  1 e 1 @28 ]
+"1115
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1165
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S364 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1391
+[s S373 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S378 . 1 `S364 1 . 1 0 `S373 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES378  1 e 1 @149 ]
+"1502
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1561
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1619
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1952
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1997
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2319
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2668
+[v _APFCON0 APFCON0 `VEuc  1 e 1 @285 ]
+"2729
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @286 ]
+"2767
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2814
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3054
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3074
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3110
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"3160
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3193
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S478 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3210
+[u S487 . 1 `S478 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES487  1 e 1 @413 ]
+"3255
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S74 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3272
+[u S83 . 1 `S74 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES83  1 e 1 @414 ]
+"3317
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3369
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3427
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"4234
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"4254
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @658 ]
+"4274
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+"4356
+[v _PWM1CON PWM1CON `VEuc  1 e 1 @660 ]
+"4431
+[v _ECCP1AS ECCP1AS `VEuc  1 e 1 @661 ]
+"4588
+[v _PSTR1CON PSTR1CON `VEuc  1 e 1 @662 ]
+[s S25 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+"4985
+[s S34 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+[u S39 . 1 `S25 1 . 1 0 `S34 1 . 1 0 ]
+[v _CCPTMRS0bits CCPTMRS0bits `VES39  1 e 1 @670 ]
+"5249
+[v _CCPR4L CCPR4L `VEuc  1 e 1 @792 ]
+"5269
+[v _CCPR4H CCPR4H `VEuc  1 e 1 @793 ]
+"5289
+[v _CCP4CON CCP4CON `VEuc  1 e 1 @794 ]
+[s S108 . 1 `uc 1 MDBIT 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 MDOUT 1 0 :1:3 
+`uc 1 MDOPOL 1 0 :1:4 
+`uc 1 MDSLR 1 0 :1:5 
+`uc 1 MDOE 1 0 :1:6 
+`uc 1 MDEN 1 0 :1:7 
+]
+"5735
+[u S116 . 1 `S108 1 . 1 0 ]
+[v _MDCONbits MDCONbits `VES116  1 e 1 @924 ]
+"5770
+[v _MDSRC MDSRC `VEuc  1 e 1 @925 ]
+"5823
+[v _MDCARL MDCARL `VEuc  1 e 1 @926 ]
+"5888
+[v _MDCARH MDCARH `VEuc  1 e 1 @927 ]
+"6064
+[v _TMR6 TMR6 `VEuc  1 e 1 @1052 ]
+"6084
+[v _PR6 PR6 `VEuc  1 e 1 @1053 ]
+"6104
+[v _T6CON T6CON `VEuc  1 e 1 @1054 ]
+[s S165 . 1 `uc 1 T6CKPS0 1 0 :1:0 
+`uc 1 T6CKPS1 1 0 :1:1 
+`uc 1 TMR6ON 1 0 :1:2 
+`uc 1 T6OUTPS0 1 0 :1:3 
+`uc 1 T6OUTPS1 1 0 :1:4 
+`uc 1 T6OUTPS2 1 0 :1:5 
+`uc 1 T6OUTPS3 1 0 :1:6 
+]
+"6125
+[s S173 . 1 `uc 1 T6CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T6OUTPS 1 0 :4:3 
+]
+[u S177 . 1 `S165 1 . 1 0 `S173 1 . 1 0 ]
+[v _T6CONbits T6CONbits `VES177  1 e 1 @1054 ]
+"7160
+[v _MDEN MDEN `VEb  1 e 0 @7399 ]
+"7283
+[v _PLLR PLLR `VEb  1 e 0 @1238 ]
+[s S408 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"52 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/eusart.c
+[u S413 . 1 `S408 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES413  1 e 1 0 ]
+"58
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"51 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"86
+} 0
+"50 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"62
+} 0
+"78
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"82
+} 0
+"62 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/tmr6.c
+[v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"62 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"64 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"55 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"64 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"66 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"170
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"172
+} 0
+"166
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"168
+} 0
+"174
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"176
+} 0
+"64 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/epwm1.c
+[v _EPWM1_Initialize EPWM1_Initialize `(v  1 e 1 0 ]
+{
+"88
+} 0
+"58 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/dsm.c
+[v _DSM_Initialize DSM_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"132 C:\Users\Alcides Ramos\Desktop\MODULADOR\MPLABXC8\MODULADOR.X\mcc_generated_files/eusart.c
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 0 ]
+"139
+} 0

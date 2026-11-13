@@ -1,0 +1,7 @@
+entrada = table2array(datos(:, 1));
+salida = table2array(datos(:, 2));
+ 
+
+
+entradav = table2array(datos1(:, 1));
+salidav = table2array(datos1(:, 2));

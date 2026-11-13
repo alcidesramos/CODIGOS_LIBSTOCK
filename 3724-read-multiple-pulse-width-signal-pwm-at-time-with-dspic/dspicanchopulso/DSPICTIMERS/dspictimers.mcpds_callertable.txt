@@ -1,0 +1,50 @@
+main
+	deshabilita
+	Unlock_IOLOCK
+	PPS_Mapping
+		_PPS_Mapping
+			Unlock_IOLOCK
+			Lock_IOLOCK
+	UART1_Init
+		Get_Fosc_kHz
+		Get_Fosc_Per_Cyc
+		Delay_100ms
+		_Multiply_32x32
+		_Modulus_32x32
+		_Divide_32x32
+	Lock_IOLOCK
+	UART1_Write_Text
+		UART1_Write
+	config_timer_frec
+	habilita
+	sprintf
+		_doprntf
+			isdigit
+			scale
+				_Mul_FP
+			fround
+				_Mul_FP
+			_Compare_Le_Fp
+				_Compare_Fp
+			_Mul_FP
+			_Compare_Ge_Fp
+				_Compare_Fp
+			_Div_FP
+			_Float2Longword
+			_Long2Float
+			_Sub_FP
+				_AddSub_FP
+			_AddSub_FP
+			_Modulus_32x32
+			_Divide_32x32
+			_Float2Longint
+	_Long2Float
+	_Div_FP
+	_Mul_FP
+Int_frecuencia3
+Int_frecuencia2
+Int_frecuencia1
+aritmetrico
+pilaInt
+direccionInt
+osciladorInt

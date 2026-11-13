@@ -1,0 +1,8 @@
+main
+	__CC2DW
+		____DoICP
+	InitTimer0
+	WordToStrWithZeros
+		Div_16x16_U
+Interrupt
+	limpia_display

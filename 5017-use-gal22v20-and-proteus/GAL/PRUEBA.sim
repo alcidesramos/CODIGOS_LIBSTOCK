@@ -1,0 +1,40 @@
+%SIGNAL
+PIN   2 =  A 
+PIN  20 =  AND 
+PIN   3 =  B 
+PIN  23 =  NOT 
+PIN  21 =  OR 
+PIN  22 =  XOR 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+AND =>
+    A & B
+
+NOT =>
+    !A
+
+OR =>
+    A
+  # B
+
+XOR =>
+    A & !B
+  # !A & B
+
+AND.oe  =>
+    1 
+
+NOT.oe  =>
+    1 
+
+OR.oe  =>
+    1 
+
+XOR.oe  =>
+    1 
+
+%END

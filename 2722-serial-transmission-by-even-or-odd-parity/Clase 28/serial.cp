@@ -1,0 +1,96 @@
+#line 1 "C:/Users/Alcides Ramos/Desktop/Clase 27/serial.c"
+ unsigned int codigo;
+ float voltaje;
+ float temperatura;
+
+ char texto[20];
+
+void Uart1_write_text_const(const char *info)
+{
+ while(*info) UART1_Write(*info++);
+}
+
+
+void UART1_Write_pa(char dat_)
+{
+ char cont_,pari,p_cont=0;
+
+ pari=0;
+ for (cont_=0;cont_<=7;cont_++)
+
+ {
+ if ((dat_ & 1<<cont_)!=0) p_cont++;
+
+ }
+
+ if (p_cont%2!=0) pari=~pari;
+
+ TX9D_bit=pari;
+ UART1_Write(dat_);
+
+}
+
+
+void UART1_Write_text_pa(char *info)
+{
+ while(*info) UART1_Write_pa(*info++);
+}
+
+void UART1_Write_text_pa_const(const char *info)
+{
+ while(*info) UART1_Write_pa(*info++);
+}
+
+
+void main()
+{
+
+
+ adcon1=0b1101;
+
+
+ TRISA0_bit=1;
+ TRISA1_bit=1;
+
+
+ TRISC6_bit=0;
+ TRISC7_bit=1;
+ UART1_Init(9600);
+ TX9_bit=1;
+
+
+ UART1_Write_text_pa_const("INICIANDO\r\n");
+
+
+ while (1)
+ {
+ codigo=ADC_Read(0);
+ voltaje=codigo*5.0/1023.0;
+#line 73 "C:/Users/Alcides Ramos/Desktop/Clase 27/serial.c"
+ sprintf(texto,"Voltaje=%.2f V\r\n",voltaje);
+ UART1_Write_text_pa(texto);
+
+
+
+
+
+ codigo=ADC_Read(1);
+ temperatura=codigo*500.0/1023.0;
+ sprintf(texto,"Temperatura=%.1f \r\n",temperatura);
+ UART1_Write_text_pa(texto);
+
+
+
+
+
+
+
+
+
+ Delay_ms(800);
+
+ }
+
+
+
+}

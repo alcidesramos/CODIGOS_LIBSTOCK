@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://notes.iopush.net/custom-usb-hid-device-descriptor-media-keyboard/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Custom USB HID device descriptor : media + keyboard</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="https://notes.iopush.net/favicon.ico">
+
+	<!--[if lt IE 9]>
+	<script src="//cdn.jsdelivr.net/nwmatcher/1.2.5/nwmatcher.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/css3-mediaqueries/0.1/css3-mediaqueries.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="./Custom USB HID device descriptor _ media + keyboard_files/sunburst.css">
+	<link rel="stylesheet" type="text/css" href="./Custom USB HID device descriptor _ media + keyboard_files/screen.css">
+
+	<meta name="description" content="How to build custom HID descriptor for keyboard + consumer device/media keys (Play/Pause/Mute/Volume, ...)">
+    <link rel="shortcut icon" href="https://notes.iopush.net/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://notes.iopush.net/custom-usb-hid-device-descriptor-media-keyboard/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://notes.iopush.net/custom-usb-hid-device-descriptor-media-keyboard/amp/">
+    
+    <meta property="og:site_name" content="BlocNotes">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Custom USB HID device descriptor : media + keyboard">
+    <meta property="og:description" content="For a personal project I need media keys (play, volume, mute, ...) and a way to
+lock a computer under Windows (Windows+L keys).
+There is a lot of HID keyboard descriptors on the Internet, some are for
+keyboards + media but all contains at least one unused byte... Not a good thing
+for embedded systems with constraint memory. Why this ? The descriptor can be
+found in USB-IF example [http://www.usb.org/developers/hidpage/HID1_11.pdf] 
+(Appendix B) and describe a boot compatible keyboard. So unless ">
+    <meta property="og:url" content="https://notes.iopush.net/custom-usb-hid-device-descriptor-media-keyboard/">
+    <meta property="article:published_time" content="2016-12-13T23:02:09.000Z">
+    <meta property="article:modified_time" content="2016-12-16T21:16:50.000Z">
+    <meta property="article:tag" content="Embedded electronics">
+    <meta property="article:tag" content="STM32">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Custom USB HID device descriptor : media + keyboard">
+    <meta name="twitter:description" content="For a personal project I need media keys (play, volume, mute, ...) and a way to
+lock a computer under Windows (Windows+L keys).
+There is a lot of HID keyboard descriptors on the Internet, some are for
+keyboards + media but all contains at least one unused byte... Not a good thing
+for embedded systems with constraint memory. Why this ? The descriptor can be
+found in USB-IF example [http://www.usb.org/developers/hidpage/HID1_11.pdf] 
+(Appendix B) and describe a boot compatible keyboard. So unless ">
+    <meta name="twitter:url" content="https://notes.iopush.net/custom-usb-hid-device-descriptor-media-keyboard/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Oliv&#39;">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Embedded electronics, STM32">
+    <meta name="twitter:site" content="@ioPush_net">
+    
+    <script async="" src="./Custom USB HID device descriptor _ media + keyboard_files/analytics.js.descarga"></script><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "BlocNotes",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://notes.iopush.net/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Oliv&#x27;",
+        "url": "https://notes.iopush.net/author/oliv/",
+        "sameAs": []
+    },
+    "headline": "Custom USB HID device descriptor : media + keyboard",
+    "url": "https://notes.iopush.net/custom-usb-hid-device-descriptor-media-keyboard/",
+    "datePublished": "2016-12-13T23:02:09.000Z",
+    "dateModified": "2016-12-16T21:16:50.000Z",
+    "keywords": "Embedded electronics, STM32",
+    "description": "For a personal project I need media keys (play, volume, mute, ...) and a way to\nlock a computer under Windows (Windows+L keys).\nThere is a lot of HID keyboard descriptors on the Internet, some are for\nkeyboards + media but all contains at least one unused byte... Not a good thing\nfor embedded systems with constraint memory. Why this ? The descriptor can be\nfound in USB-IF example [http://www.usb.org/developers/hidpage/HID1_11.pdf] \n(Appendix B) and describe a boot compatible keyboard. So unless ",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://notes.iopush.net/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 3.0">
+    <link rel="alternate" type="application/rss+xml" title="BlocNotes" href="https://notes.iopush.net/rss/">
+<script src="./Custom USB HID device descriptor _ media + keyboard_files/embed.js.descarga" data-timestamp="1588054144370"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./Custom USB HID device descriptor _ media + keyboard_files/main.js.descarga"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.9a11b91b20ca66d0cf6475e0f5c1ab1a.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.f9554506a08a1cc2b021f0dfc3f59ebb.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.2569b4785d87ab13c01fd14df7af10db.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="userConfig" src="./Custom USB HID device descriptor _ media + keyboard_files/config.js(1).descarga"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="velocity" src="./Custom USB HID device descriptor _ media + keyboard_files/velocity.min.js.descarga"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fitvids" src="./Custom USB HID device descriptor _ media + keyboard_files/jquery.fitvids.js.descarga"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="nanoscroller" src="./Custom USB HID device descriptor _ media + keyboard_files/jquery.nanoscroller.min.js.descarga"></script><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="prettify" src="./Custom USB HID device descriptor _ media + keyboard_files/prettify.js.descarga"></script><script src="./Custom USB HID device descriptor _ media + keyboard_files/alfalfalfa.0823c767a3bc925f628afd9bed26c958.js.descarga" async="" charset="UTF-8"></script></head>
+<body class="post-template tag-embedded-electronics tag-stm32">
+	<header id="main-head-asnd">
+	
+	<span id="mobile-menu-ignite-asnd" class="fa fa-reorder"></span>
+
+	<div id="head-wrapper-asnd">
+		
+		<div class="nano has-scrollbar"><div class="nano-content" tabindex="0" style="right: -17px;">
+
+			<h1 id="main-name-asnd"><a href="https://notes.iopush.net/">BlocNotes</a></h1>
+
+			<p id="the-description-asnd">
+				Notepad of a tinker, maker, hacker or whatever you call it :)
+			</p>
+
+			<nav id="main-nav-asnd">
+				<ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="https://notes.iopush.net/">Home</a></li>
+    <li class="nav-projects" role="menuitem"><a href="https://notes.iopush.net/projects">Projects</a></li>
+    <li class="nav-iopush-app" role="menuitem"><a href="https://notes.iopush.net/iopush-app/">--- ioPush-App</a></li>
+    <li class="nav-lora-lorawan" role="menuitem"><a href="https://notes.iopush.net/lora-lorawan-project">--- Lora (LoraWAN)</a></li>
+    <li class="nav-noterf" role="menuitem"><a href="https://notes.iopush.net/noterf">--- NoteRF</a></li>
+    <li class="nav-stm32-dev-board" role="menuitem"><a href="https://notes.iopush.net/stm32l052-development-board/">--- STM32 dev board</a></li>
+    <li class="nav-rss" role="menuitem"><a href="https://notes.iopush.net/rss/">RSS</a></li>
+</ul>
+
+				<section id="dynasocial-links"></section>
+			</nav>
+
+			<section class="dynawidgets-area" data-dynaarea_name="footer"></section>
+
+		</div><div class="nano-pane" style="display: none;"><div class="nano-slider" style="height: 476px; transform: translate(0px, 0px);"></div></div></div>
+
+	</div>
+</header>
+
+	
+<main id="main-asnd">
+	<article id="post-page-asnd" class="post tag-embedded-electronics tag-stm32">
+		
+		<header class="post-header">
+		
+			<span class="post-meta-info">
+				    		By <a href="https://notes.iopush.net/author/oliv/">Oliv'</a> - 
+				14 December 2016
+				<div class="tags-block">
+					<a href="https://notes.iopush.net/tag/embedded-electronics/">Embedded electronics</a> • <a href="https://notes.iopush.net/tag/stm32/">STM32</a>
+				</div>
+			</span>
+
+			
+			<h1>Custom USB HID device descriptor : consumer device (media) + keyboard</h1>
+		</header>
+
+		<section id="post-content-asnd">
+			<!--kg-card-begin: markdown--><p>For a personal project I need media keys (play, volume, mute, ...) and a way to lock a computer under Windows (Windows+L keys).<br>
+There is a lot of HID keyboard descriptors on the Internet, some are for keyboards + media but all contains at least one unused byte... Not a good thing for embedded systems with constraint memory. Why this ? The descriptor can be found in <a href="http://www.usb.org/developers/hidpage/HID1_11.pdf">USB-IF example</a> (Appendix B) and describe a boot compatible keyboard. So unless you need your keyboard in boot menus, it can be dropped. Also, the example define 6 simultaneous keys, I decreased it to three as I only need one key.</p>
+<p>Consumer device allows lot of actions, which can be found in <a href="http://www.usb.org/developers/hidpage/Hut1_12v2.pdf">HID usage tables</a> document, in §15 <code>consumer page</code>. I selected some relevant to my application (media keys), but you can add more if required, just increase the <code>report count</code> and add the new key. Note that each started byte must be padded with constant bits, so if your <code>report count</code> is not a multiple of 8, add a constant section.</p>
+<h4 id="howtouseit">How to use it ?</h4>
+<p>Prepare an <code>uint8_t</code> table with a size matching the amount of data you have to send plus one for the descriptor (first byte).<br>
+For media keys, each bit of the second byte will correspond to one key, LSB is the first in the descriptor.<br>
+For keyboard, the second byte is for modifiers, and third, fourth, fifth are for keys.</p>
+<p>Those examples are related to the following descriptor.</p>
+<pre class="prettyprint"><code class="language-C"><span class="typ">uint8_t</span><span class="pln"> bufferHID</span><span class="pun">[</span><span class="lit">5</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">};</span><span class="pln">
+</span><span class="com">// Send media mute</span><span class="pln">
+bufferHID</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span><span class="pln">      </span><span class="com">// Start with the report ID</span><span class="pln">
+bufferHID</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0x20</span><span class="pun">;</span><span class="pln">   </span><span class="com">// Switch mute bit to 1</span><span class="pln">
+USB_HID_SendReport</span><span class="pun">(</span><span class="pln">bufferHID</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Only 2 bytes required : report ID + media keys byte.</span><span class="pln">
+</span><span class="com">// Send Windows+L</span><span class="pln">
+bufferHID</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln">      </span><span class="com">// Start with the report ID</span><span class="pln">
+bufferHID</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0x08</span><span class="pun">;</span><span class="pln">   </span><span class="com">// Switch left GUI bit to 1 - Windows or Apple/Cmd key</span><span class="pln">
+bufferHID</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0x0F</span><span class="pun">;</span><span class="pln">   </span><span class="com">// 'l' key</span><span class="pln">
+USB_HID_SendReport</span><span class="pun">(</span><span class="pln">bufferHID</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">);</span><span class="pln"> </span><span class="com">// 5 bytes required : report ID + keyboard[4]</span><span class="pln">
+delay</span><span class="pun">(</span><span class="lit">30</span><span class="pun">);</span><span class="pln">             </span><span class="com">// Leave some time for the USB stack</span><span class="pln">
+bufferHID</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">      </span><span class="com">// Release keys</span><span class="pln">
+bufferHID</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+USB_HID_SendReport</span><span class="pun">(</span><span class="pln">bufferHID</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Send released keys</span></code></pre>
+<h4 id="descriptor">Descriptor</h4>
+<ul>
+<li>Keyboard</li>
+<li>Modifiers (MSB-LSB) : <code>RIGHT_GUI</code>-<code>RIGHT_ALT</code>-<code>RIGHT_SHIFT</code>-<code>RIGHT_CTRL</code>-<code>LEFT_GUI</code>-<code>LEFT_ALT</code>-<code>LEFT_SHIFT</code>-<code>LEFT_CTRL</code></li>
+<li>Media keys</li>
+<li>Keys (MSB-LSB) : <code>Next</code>-<code>Previous</code>-<code>Stop</code>-<code>Eject</code>-<code>Play/Pause</code>-<code>Mute</code>-<code>Vol inc</code>-<code>Vol dec</code></li>
+</ul>
+<p><strong>Descriptor</strong></p>
+<pre class="prettyprint"><code class="language-C"><span class="com">// 78 bytes</span><span class="pln">
+</span><span class="lit">0x05</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x01</span><span class="pun">,</span><span class="pln">        </span><span class="com">// Usage Page (Generic Desktop Ctrls)</span><span class="pln">
+</span><span class="lit">0x09</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x06</span><span class="pun">,</span><span class="pln">        </span><span class="com">// Usage (Keyboard)</span><span class="pln">
+</span><span class="lit">0xA1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x01</span><span class="pun">,</span><span class="pln">        </span><span class="com">// Collection (Application)</span><span class="pln">
+</span><span class="lit">0x85</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x01</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Report ID (1)</span><span class="pln">
+</span><span class="lit">0x05</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x07</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage Page (Kbrd/Keypad)</span><span class="pln">
+</span><span class="lit">0x75</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x01</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Report Size (1)</span><span class="pln">
+</span><span class="lit">0x95</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x08</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Report Count (8)</span><span class="pln">
+</span><span class="lit">0x19</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0xE0</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage Minimum (0xE0)</span><span class="pln">
+</span><span class="lit">0x29</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0xE7</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage Maximum (0xE7)</span><span class="pln">
+</span><span class="lit">0x15</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x00</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Logical Minimum (0)</span><span class="pln">
+</span><span class="lit">0x25</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x01</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Logical Maximum (1)</span><span class="pln">
+</span><span class="lit">0x81</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x02</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Input (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)</span><span class="pln">
+</span><span class="lit">0x95</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x03</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Report Count (3)</span><span class="pln">
+</span><span class="lit">0x75</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x08</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Report Size (8)</span><span class="pln">
+</span><span class="lit">0x15</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x00</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Logical Minimum (0)</span><span class="pln">
+</span><span class="lit">0x25</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x64</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Logical Maximum (100)</span><span class="pln">
+</span><span class="lit">0x05</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x07</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage Page (Kbrd/Keypad)</span><span class="pln">
+</span><span class="lit">0x19</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x00</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage Minimum (0x00)</span><span class="pln">
+</span><span class="lit">0x29</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x65</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage Maximum (0x65)</span><span class="pln">
+</span><span class="lit">0x81</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x00</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Input (Data,Array,Abs,No Wrap,Linear,Preferred State,No Null Position)</span><span class="pln">
+</span><span class="lit">0xC0</span><span class="pun">,</span><span class="pln">              </span><span class="com">// End Collection</span><span class="pln">
+</span><span class="lit">0x05</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x0C</span><span class="pun">,</span><span class="pln">        </span><span class="com">// Usage Page (Consumer)</span><span class="pln">
+</span><span class="lit">0x09</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x01</span><span class="pun">,</span><span class="pln">        </span><span class="com">// Usage (Consumer Control)</span><span class="pln">
+</span><span class="lit">0xA1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x01</span><span class="pun">,</span><span class="pln">        </span><span class="com">// Collection (Application)</span><span class="pln">
+</span><span class="lit">0x85</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x02</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Report ID (2)</span><span class="pln">
+</span><span class="lit">0x05</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x0C</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage Page (Consumer)</span><span class="pln">
+</span><span class="lit">0x15</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x00</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Logical Minimum (0)</span><span class="pln">
+</span><span class="lit">0x25</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x01</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Logical Maximum (1)</span><span class="pln">
+</span><span class="lit">0x75</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x01</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Report Size (1)</span><span class="pln">
+</span><span class="lit">0x95</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x07</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Report Count (7)</span><span class="pln">
+</span><span class="lit">0x09</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0xB5</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage (Scan Next Track)</span><span class="pln">
+</span><span class="lit">0x09</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0xB6</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage (Scan Previous Track)</span><span class="pln">
+</span><span class="lit">0x09</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0xB7</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage (Stop)</span><span class="pln">
+</span><span class="lit">0x09</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0xB8</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage (Eject)</span><span class="pln">
+</span><span class="lit">0x09</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0xCD</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage (Play/Pause)</span><span class="pln">
+</span><span class="lit">0x09</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0xE2</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage (Mute)</span><span class="pln">
+</span><span class="lit">0x09</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0xE9</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage (Volume Increment)</span><span class="pln">
+</span><span class="lit">0x09</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0xEA</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Usage (Volume Decrement)</span><span class="pln">
+</span><span class="lit">0x81</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0x02</span><span class="pun">,</span><span class="pln">        </span><span class="com">//   Input (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)</span><span class="pln">
+</span><span class="lit">0xC0</span><span class="pun">,</span><span class="pln">              </span><span class="com">// End Collection</span></code></pre>
+<p><strong>Helpful defines</strong></p>
+<pre class="prettyprint"><code class="language-C"><span class="com">// USB media codes</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_SCAN_NEXT </span><span class="lit">0x01</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_SCAN_PREV </span><span class="lit">0x02</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_STOP      </span><span class="lit">0x04</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_EJECT     </span><span class="lit">0x08</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_PAUSE     </span><span class="lit">0x10</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_MUTE      </span><span class="lit">0x20</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_VOL_UP    </span><span class="lit">0x40</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_VOL_DEC   </span><span class="lit">0x80</span><span class="pln">
+
+</span><span class="com">// USB keyboard codes</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_MODIFIER_LEFT_CTRL   </span><span class="lit">0x01</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_MODIFIER_LEFT_SHIFT  </span><span class="lit">0x02</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_MODIFIER_LEFT_ALT    </span><span class="lit">0x04</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_MODIFIER_LEFT_GUI    </span><span class="lit">0x08</span><span class="pln"> </span><span class="com">// (Win/Apple/Meta)</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_MODIFIER_RIGHT_CTRL  </span><span class="lit">0x10</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_MODIFIER_RIGHT_SHIFT </span><span class="lit">0x20</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_MODIFIER_RIGHT_ALT   </span><span class="lit">0x40</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_MODIFIER_RIGHT_GUI   </span><span class="lit">0x80</span><span class="pln">
+</span><span class="com">#define</span><span class="pln"> USB_HID_KEY_L     </span><span class="lit">0x0F</span></code></pre>
+<h4 id="documentation">Documentation</h4>
+<ul>
+<li><a href="http://eleccelerator.com/tutorial-about-usb-hid-report-descriptors/">Most useful page</a> I read about custom HID descriptors</li>
+<li><a href="http://www.usb.org/developers/hidpage/Hut1_12v2.pdf">USB HID usage table</a> to find key codes.</li>
+<li>Implementation on STM32 targets (soon).</li>
+</ul>
+<!--kg-card-end: markdown-->
+		</section>
+
+		<footer id="author-share-asnd">
+
+			<section class="share-section">
+				<h4 class="share-label">Share this post</h4>
+
+				<a class="share-link twitter" href="https://twitter.com/share?text=Custom%20USB%20HID%20device%20descriptor%20%3A%20consumer%20device%20(media)%20%2B%20keyboard&amp;url=https://notes.iopush.net/custom-usb-hid-device-descriptor-media-keyboard/" onclick="window.open(this.href, &#39;twitter-share&#39;, &#39;width=550,height=235&#39;);return false;">
+					<span class="fa fa-twitter"></span> Twitter 
+				</a>
+				<a class="share-link facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://notes.iopush.net/custom-usb-hid-device-descriptor-media-keyboard/" onclick="window.open(this.href, &#39;facebook-share&#39;,&#39;width=580,height=296&#39;);return false;">
+					<span class="fa fa-facebook"></span> Facebook 
+				</a>
+				<a class="share-link google-plus" href="https://plus.google.com/share?url=https://notes.iopush.net/custom-usb-hid-device-descriptor-media-keyboard/" onclick="window.open(this.href, &#39;google-plus-share&#39;, &#39;width=490,height=530&#39;);return false;">
+					<span class="fa fa-google-plus"></span> Google Plus
+				</a>
+			</section>
+
+			<section class="jump-to-posts">
+				<h4>More to read</h4>
+				<div>
+					<span class="next-post-label">NEXT POST <i class="fa fa-angle-right"></i></span>
+					<a href="https://notes.iopush.net/stm32-custom-usb-hid-step-by-step-2/">STM32 - Custom USB HID device step by step</a>
+				</div>
+
+				<div>
+					<span class="prev-post-label"><i class="fa fa-angle-left"></i> PAST POST</span>
+					<a href="https://notes.iopush.net/stm32-log-and-printf/">STM32 - Log and printf</a>
+				</div>
+			</section>
+
+
+                         <div id="disqus_thread"><iframe id="dsq-app7100" name="dsq-app7100" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Custom USB HID device descriptor _ media + keyboard_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 579px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = 'https://notes.iopush.net/custom-usb-hid-device-descriptor-media-keyboard/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '40'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'https://iopush.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+		</footer>
+	</article>
+</main>
+
+
+	<footer id="main-footer-asnd">
+	<p id="bottom-copyright">
+		© 2020, BlocNotes by <a href="https://notes.iopush.net/custom-usb-hid-device-descriptor-media-keyboard/#">Aftertype</a>. Powered by <a href="https://ghost.org/">Ghost</a>.
+	</p>
+</footer>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73272712-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	<script type="text/javascript" src="./Custom USB HID device descriptor _ media + keyboard_files/jquery-1.11.3.min.js.descarga"></script>
+	<script data-main="/assets/js/main" type="text/javascript" src="./Custom USB HID device descriptor _ media + keyboard_files/require.min.js.descarga"></script>
+	
+
+<iframe style="display: none;" src="./Custom USB HID device descriptor _ media + keyboard_files/saved_resource(1).html"></iframe></body></html>

@@ -1,0 +1,8 @@
+<WCH v="2">
+<item n="EEPROM_Write_Int_punte_L0" r="1" s="False" e="False" i="721">
+<item n="" r="0" s="False" e="False" i="0"/>
+</item>
+<item n="FARG_EEPROM_Write_Int_dir" r="0" s="False" e="False" i="1"/>
+<item n="_pruebA" r="1" s="False" e="False" i="2"/>
+<item n="FARG_EEPROM_Write_Int_dato_e" r="0" s="False" e="False" i="3"/>
+</WCH>

@@ -1,0 +1,29 @@
+Name     PRUEBA ;
+PartNo   00 ;
+Date     26/07/2022 ;
+Revision 01 ;
+Designer Engineer ;
+Company  ARZ ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/* *************** INPUT PINS *********************/
+PIN   2  = A                         ; /*                                 */ 
+PIN   3 = B                        ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN   20  = AND                         ; /*                                 */ 
+PIN   21  =  OR                       ; /*                                 */ 
+PIN   22  =   XOR                      ; /*                                 */ 
+PIN   23  =    NOT                     ; /*                                 */ 
+
+
+AND= A & B;
+OR =A # B;
+XOR= A $ B;
+NOT=!A;
+
+
+
+

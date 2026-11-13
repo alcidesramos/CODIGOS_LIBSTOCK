@@ -1,0 +1,6 @@
+[PROJECTS]
+Count=2
+Project0=..\Pic2017\picnextion2017.mcppi
+Project1=NEXTION.mcppi
+[ActiveProject]
+Index=1

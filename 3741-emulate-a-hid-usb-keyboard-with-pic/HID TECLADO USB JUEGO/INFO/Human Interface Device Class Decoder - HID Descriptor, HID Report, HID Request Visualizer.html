@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0072)http://www.usblyzer.com/usb-human-interface-device-hid-class-decoder.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/1.txt"></script><script type="text/javascript" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/1(1).txt"></script><script type="text/javascript" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/moatframe.js.descarga"></script>
+<title>Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer</title>
+
+<meta name="description" content="USB HID class decoder helps you visualize various HID class specific descriptors like HID Report Descriptor and requests like Get Report (GET_REPORT), Get Idle (GET_IDLE) etc.">
+<meta name="keywords" content="human interface device,usb hid class,hid descriptor,hid report descriptor,hid report">
+<meta name="author" content="USBlyzer Team - http://www.usblyzer.com/">
+<meta name="copyright" content="© 2006-2017 USBlyzer Team">
+<link rel="shortcut icon" href="http://www.usblyzer.com/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://www.usblyzer.com/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/main.css" type="text/css">
+<link rel="alternate" type="application/rss+xml" href="http://www.usblyzer.com/rss.xml" title="usblyzer.com RSS feed">
+<script type="text/javascript" async="" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/inpage_linkid.js.descarga" id="undefined"></script><script type="text/javascript" async="" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/ga.js.descarga"></script><script language="Javascript" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/script.js.descarga" type="text/javascript"></script>
+
+<!-- > > > Highslide JS > > > -->
+<script type="text/javascript" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/highslide.js.descarga"></script>
+<link rel="stylesheet" type="text/css" href="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/highslide.css">
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="js/highslide/highslide-ie6.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/hsoverride.css">
+<script type="text/javascript"> 
+	hs.graphicsDir = 'js/highslide/graphics/'; 
+	hs.showCredits = false;
+	hs.outlineType = 'rounded-white';
+	hs.wrapperClassName = 'highslide-white';
+	hs.restoreTitle = "Click to close, click and drag to move.";
+</script>
+<!-- < < < Highslide JS < < < -->
+<style type="text/css">
+table.csp {width:auto; border-collapse:collapse;}
+table.csp th, table.csp td {padding-top:0.3em; padding-right:1.4em; padding-bottom:0.3em; padding-left:1.4em; font-size: 70%; border:solid 1px #ccc;}
+table.csp th {background:#f7f7f7;}
+</style> 
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-1634964-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<style type="text/css">.at-icon{fill:#fff;border:0}.at-icon-wrapper{display:inline-block;overflow:hidden}a .at-icon-wrapper{cursor:pointer}.at-rounded,.at-rounded-element .at-icon-wrapper{border-radius:12%}.at-circular,.at-circular-element .at-icon-wrapper{border-radius:50%}.addthis_32x32_style .at-icon{width:2pc;height:2pc}.addthis_24x24_style .at-icon{width:24px;height:24px}.addthis_20x20_style .at-icon{width:20px;height:20px}.addthis_16x16_style .at-icon{width:1pc;height:1pc}#at16lb{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1001;background-color:#000;opacity:.001}#at_complete,#at_error,#at_share,#at_success{position:static!important}.at15dn{display:none}#at15s,#at16p,#at16p form input,#at16p label,#at16p textarea,#at_share .at_item{font-family:arial,helvetica,tahoma,verdana,sans-serif!important;font-size:9pt!important;outline-style:none;outline-width:0;line-height:1em}* html #at15s.mmborder{position:absolute!important}#at15s.mmborder{position:fixed!important;width:250px!important}#at15s{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);float:none;line-height:1em;margin:0;overflow:visible;padding:5px;text-align:left;position:absolute}#at15s a,#at15s span{outline:0;direction:ltr;text-transform:none}#at15s .at-label{margin-left:5px}#at15s .at-icon-wrapper{width:1pc;height:1pc;vertical-align:middle}#at15s .at-icon{width:1pc;height:1pc}.at4-icon{display:inline-block;background-repeat:no-repeat;background-position:top left;margin:0;overflow:hidden;cursor:pointer}.addthis_16x16_style .at4-icon,.addthis_default_style .at4-icon,.at4-icon,.at-16x16{width:1pc;height:1pc;line-height:1pc;background-size:1pc!important}.addthis_32x32_style .at4-icon,.at-32x32{width:2pc;height:2pc;line-height:2pc;background-size:2pc!important}.addthis_24x24_style .at4-icon,.at-24x24{width:24px;height:24px;line-height:24px;background-size:24px!important}.addthis_20x20_style .at4-icon,.at-20x20{width:20px;height:20px;line-height:20px;background-size:20px!important}.at4-icon.circular,.circular .at4-icon,.circular.aticon{border-radius:50%}.at4-icon.rounded,.rounded .at4-icon{border-radius:4px}.at4-icon-left{float:left}#at15s .at4-icon{text-indent:20px;padding:0;overflow:visible;white-space:nowrap;background-size:1pc;width:1pc;height:1pc;background-position:top left;display:inline-block;line-height:1pc}.addthis_vertical_style .at4-icon,.at4-follow-container .at4-icon{margin-right:5px}html>body #at15s{width:250px!important}#at15s.atm{background:none!important;padding:0!important;width:10pc!important}#at15s_inner{background:#fff;border:1px solid #fff;margin:0}#at15s_head{position:relative;background:#f2f2f2;padding:4px;cursor:default;border-bottom:1px solid #e5e5e5}.at15s_head_success{background:#cafd99!important;border-bottom:1px solid #a9d582!important}.at15s_head_success a,.at15s_head_success span{color:#000!important;text-decoration:none}#at15s_brand,#at15sptx,#at16_brand{position:absolute}#at15s_brand{top:4px;right:4px}.at15s_brandx{right:20px!important}a#at15sptx{top:4px;right:4px;text-decoration:none;color:#4c4c4c;font-weight:700}#at15sptx:hover{text-decoration:underline}#at16_brand{top:5px;right:30px;cursor:default}#at_hover{padding:4px}#at_hover .at_item,#at_share .at_item{background:#fff!important;float:left!important;color:#4c4c4c!important}#at_share .at_item .at-icon-wrapper{margin-right:5px}#at_hover .at_bold{font-weight:700;color:#000!important}#at_hover .at_item{width:7pc!important;padding:2px 3px!important;margin:1px;text-decoration:none!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover{margin:0!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover,#at_share .at_item.athov,#at_share .at_item:hover{background:#f2f2f2!important;border:1px solid #e5e5e5;color:#000!important;text-decoration:none}.ipad #at_hover .at_item:focus{background:#fff!important;border:1px solid #fff}.at15t{display:block!important;height:1pc!important;line-height:1pc!important;padding-left:20px!important;background-position:0 0;text-align:left}.addthis_button,.at15t{cursor:pointer}.addthis_toolbox a.at300b,.addthis_toolbox a.at300m{width:auto}.addthis_toolbox a{margin-bottom:5px;line-height:initial}.addthis_toolbox.addthis_vertical_style{width:200px}.addthis_button_facebook_like .fb_iframe_widget{line-height:100%}.addthis_button_facebook_like iframe.fb_iframe_widget_lift{max-width:none}.addthis_toolbox a.addthis_button_counter,.addthis_toolbox a.addthis_button_facebook_like,.addthis_toolbox a.addthis_button_facebook_send,.addthis_toolbox a.addthis_button_facebook_share,.addthis_toolbox a.addthis_button_foursquare,.addthis_toolbox a.addthis_button_linkedin_counter,.addthis_toolbox a.addthis_button_pinterest_pinit,.addthis_toolbox a.addthis_button_tweet{display:inline-block}.addthis_toolbox span.addthis_follow_label{display:none}.addthis_toolbox.addthis_vertical_style span.addthis_follow_label{display:block;white-space:nowrap}.addthis_toolbox.addthis_vertical_style a{display:block}.addthis_toolbox.addthis_vertical_style.addthis_32x32_style a{line-height:2pc;height:2pc}.addthis_toolbox.addthis_vertical_style .at300bs{margin-right:4px;float:left}.addthis_toolbox.addthis_20x20_style span{line-height:20px}.addthis_toolbox.addthis_32x32_style span{line-height:2pc}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact,.addthis_toolbox.addthis_pill_combo_style a{float:left}.addthis_toolbox.addthis_pill_combo_style a.addthis_button_tweet{margin-top:-2px}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact{margin-right:4px}.addthis_default_style .addthis_separator{margin:0 5px;display:inline}div.atclear{clear:both}.addthis_default_style .addthis_separator,.addthis_default_style .at4-icon,.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300bs,.addthis_default_style .at300m{float:left}.at300b img,.at300bo img{border:0}a.at300b .at4-icon,a.at300m .at4-icon{display:block}.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300m{padding:0 2px}.at300b,.at300bo,.at300bs,.at300m{cursor:pointer}.addthis_button_facebook_like.at300b:hover,.addthis_button_facebook_like.at300bs:hover,.addthis_button_facebook_send.at300b:hover,.addthis_button_facebook_send.at300bs:hover{opacity:1}.addthis_20x20_style .at15t,.addthis_20x20_style .at300bs{overflow:hidden;display:block;height:20px!important;width:20px!important;line-height:20px!important}.addthis_32x32_style .at15t,.addthis_32x32_style .at300bs{overflow:hidden;display:block;height:2pc!important;width:2pc!important;line-height:2pc!important}.at300bs{overflow:hidden;display:block;background-position:0 0;height:1pc;width:1pc;line-height:1pc!important}.addthis_default_style .at15t_compact,.addthis_default_style .at15t_expanded{margin-right:4px}#at_share .at_item{width:123px!important;padding:4px;margin-right:2px;border:1px solid #fff}#at16p{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);z-index:10000001;position:absolute;top:50%;left:50%;width:300px;padding:10px;margin:0 auto;margin-top:-185px;margin-left:-155px;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#5e5e5e}#at_share{margin:0;padding:0}#at16pt{position:relative;background:#f2f2f2;height:13px;padding:5px 10px}#at16pt a,#at16pt h4{font-weight:700}#at16pt h4{display:inline;margin:0;padding:0;font-size:9pt;color:#4c4c4c;cursor:default}#at16pt a{position:absolute;top:5px;right:10px;color:#4c4c4c;text-decoration:none;padding:2px}#at15sptx:focus,#at16pt a:focus{outline:thin dotted}#at15s #at16pf a{top:1px}#_atssh{width:1px!important;height:1px!important;border:0!important}.atm{width:10pc!important;padding:0;margin:0;line-height:9pt;letter-spacing:normal;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#444;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);padding:4px}.atm-f{text-align:right;border-top:1px solid #ddd;padding:5px 8px}.atm-i{background:#fff;border:1px solid #d5d6d6;padding:0;margin:0;box-shadow:1px 1px 5px rgba(0,0,0,.15)}.atm-s{margin:0!important;padding:0!important}.atm-s a:focus{border:transparent;outline:0;transition:none}#at_hover.atm-s a,.atm-s a{display:block;text-decoration:none;padding:4px 10px;color:#235dab!important;font-weight:400;font-style:normal;transition:none}#at_hover.atm-s .at_bold{color:#235dab!important}#at_hover.atm-s a:hover,.atm-s a:hover{background:#2095f0;text-decoration:none;color:#fff!important}#at_hover.atm-s .at_bold{font-weight:700}#at_hover.atm-s a:hover .at_bold{color:#fff!important}.atm-s a .at-label{vertical-align:middle;margin-left:5px;direction:ltr}.at_PinItButton{display:block;width:40px;height:20px;padding:0;margin:0;background-image:url(//s7.addthis.com/static/t00/pinit00.png);background-repeat:no-repeat}.at_PinItButton:hover{background-position:0 -20px}.addthis_toolbox .addthis_button_pinterest_pinit{position:relative}.at-share-tbx-element .fb_iframe_widget span{vertical-align:baseline!important}#at16pf{height:auto;text-align:right;padding:4px 8px}.at-privacy-info{position:absolute;left:7px;bottom:7px;cursor:pointer;text-decoration:none;font-family:helvetica,arial,sans-serif;font-size:10px;line-height:9pt;letter-spacing:.2px;color:#666}.at-privacy-info:hover{color:#000}.body .wsb-social-share .wsb-social-share-button-vert{padding-top:0;padding-bottom:0}.body .wsb-social-share.addthis_counter_style .addthis_button_tweet.wsb-social-share-button{padding-top:40px}.body .wsb-social-share.addthis_counter_style .addthis_button_facebook_like.wsb-social-share-button{padding-top:21px}@media print{#at4-follow,#at4-share,#at4-thankyou,#at4-whatsnext,#at4m-mobile,#at15s,.at4,.at4-recommended{display:none!important}}@media screen and (max-width:400px){.at4win{width:100%}}@media screen and (max-height:700px) and (max-width:400px){.at4-thankyou-inner .at4-recommended-container{height:122px;overflow:hidden}.at4-thankyou-inner .at4-recommended .at4-recommended-item:first-child{border-bottom:1px solid #c5c5c5}}</style><style type="text/css">.at-branding-logo{font-family:helvetica,arial,sans-serif;text-decoration:none;font-size:10px;display:inline-block;margin:2px 0;letter-spacing:.2px}.at-branding-logo .at-branding-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////+GlNUkcc1QAAAB1JREFUeNpiYIQDBjQmAwMmkwEM0JnY1WIxFyDAABGeAFEudiZsAAAAAElFTkSuQmCC")}.at-branding-logo .at-branding-icon,.at-branding-logo .at-privacy-icon{display:inline-block;height:10px;width:10px;margin-left:4px;margin-right:3px;margin-bottom:-1px;background-repeat:no-repeat}.at-branding-logo .at-privacy-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAMAAABR24SMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF8fr9ot/xXcfn2/P5AKva////////AKTWodjhjAAAAAd0Uk5T////////ABpLA0YAAAA6SURBVHjaJMzBDQAwCAJAQaj7b9xifV0kUKJ9ciWxlzWEWI5gMF65KUTv0VKkjVeTerqE/x7+9BVgAEXbAWI8QDcfAAAAAElFTkSuQmCC")}.at-branding-logo span{text-decoration:none}.at-branding-logo .at-branding-addthis,.at-branding-logo .at-branding-powered-by{color:#666}.at-branding-logo .at-branding-addthis:hover{color:#333}.at-cv-with-image .at-branding-addthis,.at-cv-with-image .at-branding-addthis:hover{color:#fff}a.at-branding-logo:visited{color:initial}.at-branding-info{display:inline-block;padding:0 5px;color:#666;border:1px solid #666;border-radius:50%;font-size:10px;line-height:9pt;opacity:.7;transition:all .3s ease;text-decoration:none}.at-branding-info span{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.at-branding-info:before{content:'i';font-family:Times New Roman}.at-branding-info:hover{color:#0780df;border-color:#0780df}</style><style type="text/css">.highslide img {cursor: url(js/highslide/graphics/zoomin.cur), pointer !important;}.highslide-viewport-size {position: fixed; width: 100%; height: 100%; left: 0; top: 0}</style></head>
+
+<body bgcolor="#ffffff">
+
+ <table align="center" width="100%" height="100%" border="0" cellspacing="0" cellpadding="10">
+
+  <tbody><tr>
+   <td valign="top">
+
+    <!--  header -->
+    <table align="center" width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+     <table border="0" align="center" width="100%" cellspacing="0" cellpadding="0"><tbody><tr>
+      <td width="6" height="55"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/topbar-left.gif" width="6" height="55" alt=""></td>
+      <td width="20" height="55" class="topbar">&nbsp;</td>
+      <td width="217" height="55"><a href="javascript:window.location=&#39;http://www.usblyzer.com/&#39;" title="USBlyzer - USB Protocol Analyzer for Windows"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/topbar-logo.gif" width="217" height="55" border="0" alt="USBlyzer - USB Protocol Analyzer for Windows"></a></td>
+      <td width="100%" height="55" class="topbar">&nbsp;</td>
+      <td width="216" height="55"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/topbar-desc.gif" width="216" height="55" alt="USB Analyzer for Windows"></td>
+      <td width="20" height="55" class="topbar">&nbsp;</td>
+      <td width="6" height="55"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/topbar-right.gif" width="6" height="55" alt=""></td>
+     </tr></tbody></table>
+    </td></tr></tbody></table>
+
+    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tbody><tr>
+      <td colspan="2" valign="top">
+       <table width="100%" border="0" cellspacing="10" cellpadding="0">
+        <tbody><tr valign="top">
+         <td width="14%">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tbody><tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/" title="USBlyzer - Software USB Protocol Analyzer for Windows">Home</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/usb-analysis-features.htm" title="USB Analysis Features of USBlyzer">Features</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/usb-class-decoders.htm" title="USB Class Decoders">Class Decoders</a></td></tr>
+           <tr><td class="submenu"><a class="submenu" href="http://www.usblyzer.com/usb-communication-device-class-cdc-decoder.htm" title="Communications Devices Class Decoder">CDC Class</a></td></tr>
+           <tr><td class="submenuselected">HID Class</td></tr>
+           <tr><td class="submenu"><a class="submenu" href="http://www.usblyzer.com/usb-hub-class-decoder.htm" title="Hub Class Decoder">Hub Class</a></td></tr>
+		   <tr><td class="submenu"><a class="submenu" href="http://www.usblyzer.com/usb-mass-storage-class-msc-decoder.htm" title="USB Mass Storage Class (MSC) Decoder">Mass Storage Class</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/screenshots.htm" title="USBlyzer Screenshots">Screenshots</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/explore-usb-device-tree-view-usb-device-properties.htm" title="Take the USBlyzer Tour">Take the Tour</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/requirements.htm" title="USBlyzer Requirements">Requirements</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/download.htm" title="Download USBlyzer">Download</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/purchase.htm" title="Purchase USBlyzer">Purchase</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/usb-protocol-analyser-faq.htm" title="USBlyzer Frequently Asked Questions">FAQ</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/support.htm" title="USBlyzer Technical Support">Support</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/feature-request.htm" title="USBlyzer Feature Request">Feature Request</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/contact.htm" title="Contact USBlyzer Team">Contact Us</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/usb-internals.htm" title="USB Internals">Articles</a></td></tr>
+           <tr><td class="menu"><a class="menu" href="http://www.usblyzer.com/links.htm" title="USB Links">Links</a></td></tr>
+<!-- Google CSE Search Box Begins  -->
+<tr><td class="menu" style="padding: 10px 0px 0px 0px;">
+<form action="http://www.usblyzer.com/search.htm" id="searchbox_005842052007723615774:forj52z2wtc">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+<input type="hidden" name="cx" value="005842052007723615774:forj52z2wtc">
+<input type="hidden" name="cof" value="FORID:11">
+<input type="text" name="q" class="cse_search_box" placeholder="Custom Search" style="border: 1px solid rgb(126, 157, 185); padding: 2px; background: url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) left center no-repeat rgb(255, 255, 255); text-indent: 48px;"></td>
+<td align="left"><input type="image" name="sa" value="search" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/search-button.gif"></td></tr></tbody></table><input name="siteurl" type="hidden" value="www.usblyzer.com/usb-human-interface-device-hid-class-decoder.htm"><input name="ref" type="hidden" value="www.google.com/"><input name="ss" type="hidden" value=""></form>
+<script type="text/javascript" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/f.txt"></script>
+</td></tr>
+<!-- Google CSE Search Box Ends -->
+          </tbody></table>
+         </td>
+
+         <td>
+          <table width="100%" border="0" cellpadding="2" cellspacing="2">
+
+           <tbody><tr valign="top"><td>
+
+<h1>&nbsp;<img align="middle" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/class-decoder-icon-hid.png" width="35" height="44" border="0" alt="HID Class Decoder">&nbsp;&nbsp;Human Interface Device (HID) Class Decoder</h1>
+<p>Human Interface Device (HID) class is one of the most frequently used USB classes. The HID class consists primarily of devices that are used by humans to control the operation of computer systems. Examples of HID class devices include keyboards, pointing devices (such as mouse devices, joysticks and trackballs), control devices (such as steering wheels, throttles, rudder pedals, and data gloves), the devices that humans use to enter data directly into a computer (such as telephones, VCR remote controls, games and simulation devices), and other devices that may not require direct human interaction but provide data in a similar to HID class devices format (such as bar code readers, voltmeters, and thermometers).</p>
+<p>The HID device class specification defines the configuration and communication protocols for human interface devices. USBlyzer includes fully comprehensive USB HID class decoder that helps you easily visualize various HID class specific requests. HID Descriptor, HID Report Descriptor and HID Reports are also decoded.</p>
+
+<br><a name="Protocols"></a><h2>HID Class-Specific Protocols</h2>
+<p>All HID Class, SubClass and Protocols below are supported:</p>
+<table cellpadding="0" cellspacing="0" class="csp">
+ <tbody><tr>
+  <th valign="top" align="center">Class</th>
+  <th valign="top" align="center">SubClass</th>
+  <th valign="top" align="center">Protocol</th>
+ </tr>
+ <tr>
+  <td valign="middle" align="center">03h - HID</td>
+  <td valign="middle" align="left">00h - None<br>01h - Boot Interface</td>
+  <td valign="middle" align="left">00h - None<br>01h - Keyboard<br>02h - Mouse</td>
+ </tr>
+</tbody></table>
+
+<br><a name="Descriptors"></a><h2>HID Class-Specific Descriptors</h2>
+<p>HID class devices use class-specific descriptors which are differ from standard USB descriptors. USBlyzer decodes and displays the following HID class-specific descriptors:</p>
+<ul>
+ <li class="litext">
+  <p class="litext">HID Descriptor</p>
+  <p class="litext" style="padding-top: 0.5em;">A HID Descriptor specifies the number, type, and size of HID Report Descriptors and Physical Descriptors that are associated with a HID class device.</p>
+ </li>
+ <li class="litext">
+  <p class="litext" style="padding-top: 0.5em;">HID Report Descriptor</p>
+  <p class="litext" style="padding-top: 0.5em;">The format of the data a HID class device can send or receive is not defined by the HID class specification. Instead, a HID device is required to provide HID Report Descriptor which enumerates all the data fields of a particular HID report the device can use. For each field in the HID report, the HID Report Descriptor defines how many bits the particular data item occupies, which usage it has, what range of values it uses, etc.</p>
+ </li>
+</ul>
+<p>Below is an example of decoding Mouse HID Report Descriptor.</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+ <tbody><tr valign="top">
+  <td align="center">
+   <div class="image">
+    <a href="http://www.usblyzer.com/img/screenshots/usb-properties-panel-hid-report-descriptor-mouse-bg.png" class="highslide" onclick="return hs.expand(this)">
+     <img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/usb-properties-panel-hid-report-descriptor-mouse-sm.png" width="212" height="272" border="0" alt="USB Properties Panel: Mouse HID Report Descriptor">
+    </a>
+   </div>
+  </td>
+ </tr>
+</tbody></table>
+
+
+<br><a name="Requests"></a><h2>HID Class-Specific Requests</h2>
+<p>HID class-specific requests allow the host to inquire about the capabilities and state of a HID compliant device and to set the state of output and feature items.</p>
+<p>All HID class-specific requests below are supported:</p>
+<ul>
+ <li><p class="litext">Get Report (GET_REPORT)</p></li>
+ <li><p class="litext">Set Report (SET_REPORT)</p></li>
+ <li><p class="litext">Get Idle (GET_IDLE)</p></li>
+ <li><p class="litext">Set Idle (SET_IDLE)</p></li>
+ <li><p class="litext">Get Protocol (GET_PROTOCOL)</p></li>
+ <li><p class="litext">Set Protocol (SET_PROTOCOL)</p></li>
+</ul>
+
+<p>For complete description of USB HID class requests, refer to <a rel="nofollow" target="_blank" href="http://www.usb.org/developers/hidpage/" title="Device Class Definition for Human Interface Devices Specification">Device Class Definition</a> for Human Interface Devices Specification.</p>
+
+<p>Below are examples of decoding Get Descriptor (HID Report Descriptor) and Set Idle requests.</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+ <tbody><tr valign="top">
+  <td align="center">
+   <div class="image">
+    <a href="http://www.usblyzer.com/img/screenshots/data-analysis-panel-get-hid-report-descriptor-consumer-control-bg.png" class="highslide" onclick="return hs.expand(this)">
+     <img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/data-analysis-panel-get-hid-report-descriptor-consumer-control-sm.png" width="226" height="335" border="0" alt="Data Analysis Panel: Get HID Report Descriptor">
+    </a>
+   </div>
+  </td>
+  <td align="center">&nbsp;&nbsp;&nbsp;</td>
+  <td align="center">
+   <div class="image">
+    <a href="http://www.usblyzer.com/img/screenshots/hid-set-idle-request-analysis-bg.png" class="highslide" onclick="return hs.expand(this)">
+     <img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/hid-set-idle-request-analysis-sm.png" width="229" height="351" border="0" alt="HID Request Analysis: Set Idle">
+    </a>
+   </div>
+  </td>
+ </tr>
+</tbody></table>
+
+
+<br><a name="Reports"></a><h2>HID Reports</h2>
+<p>The basic communication mechanism for HID class devices is a <em>HID Reports</em> that is used to transfer HID control data. HID Report Descriptor defines the format of each report. Input and Output Reports specify control data and Feature Reports specify configuration data. A device may support more than one report type and more than one report of the same type.</p>
+<p>USBlyzer extracts the individual items from the HID Report based on the HID Report Descriptor and displays them in an easy to view form. Since USBlyzer uses its own HID Parser it's possible to decode HID Reports at any time, even after the device has been unplugged or even if you analize previously saved capture file.</p>
+
+<p>Below is an example of Joystick HID Input Report analysis.</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+ <tbody><tr valign="top">
+  <td align="center">
+   <div class="image">
+    <a href="http://www.usblyzer.com/img/screenshots/hid-input-report-joystick-analysis-bg.png" class="highslide" onclick="return hs.expand(this)">
+     <img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/hid-input-report-joystick-analysis-sm.png" width="396" height="229" border="0" alt="HID Report Analysis: Joystick Input Report">
+    </a>
+   </div>
+  </td>
+ </tr>
+</tbody></table>
+
+<br><a name="UsagePages"></a><h2>HID Usage Pages</h2>
+<p>HID usages are organized into usage pages of related controls. The usage page and usage ID define a unique constant that describes a particular type of control. The following table lists the currently supported usage pages.</p>
+<table cellpadding="0" cellspacing="0" class="csp">
+ <tbody><tr>
+  <th valign="top" align="center">Page ID</th>
+  <th valign="top" align="center">Page Name</th>
+ </tr>
+ <tr>
+  <td valign="top" align="center">01h</td>
+  <td valign="top">Generic Desktop Controls</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">02h</td>
+  <td valign="top">Simulation Controls</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">03h</td>
+  <td valign="top">VR Controls</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">04h</td>
+  <td valign="top">Sport Controls</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">05h</td>
+  <td valign="top">Game Controls</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">06h</td>
+  <td valign="top">Generic Device Controls</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">07h</td>
+  <td valign="top">Keyboard/Keypad</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">08h</td>
+  <td valign="top">LEDs</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">09h</td>
+  <td valign="top">Button</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">0Ah</td>
+  <td valign="top">Ordinal</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">0Bh</td>
+  <td valign="top">Telephony Devices</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">0Ch</td>
+  <td valign="top">Consumer Devices</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">0Dh</td>
+  <td valign="top">Digitizer</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">0Fh</td>
+  <td valign="top">Physical Input Device (PID)</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">10h</td>
+  <td valign="top">Unicode</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">14h</td>
+  <td valign="top">Alphanumeric Display</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">40h</td>
+  <td valign="top">Medical Instruments</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">80h</td>
+  <td valign="top">Monitor Devices</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">81h</td>
+  <td valign="top">Monitor Enumerated Values</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">82h</td>
+  <td valign="top">VESA Virtual Controls</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">83h</td>
+  <td valign="top">VESA Command</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">84h</td>
+  <td valign="top">Power Device</td>
+ </tr>
+ <tr>
+  <td valign="top" align="center">85h</td>
+  <td valign="top">Battery System</td>
+ </tr>
+</tbody></table>
+
+<br><a name="Composite"></a><h2>Composite USB Device with Single or Multiple HID Class Interfaces</h2>
+<p>A composite USB device exposes multiple functions to a host by using multiple interfaces which are separately managed by different drivers. Each interface of a composite device is, in many respects, like a separate device that has its own configuration descriptor and, in the case of HID class interface(s), HID report descriptor(s). The default control endpoint is shared by all the interfaces while separate HID class interfaces require non-shareable interrupt endpoint(s).</p>
+<p>USBlyzer provides support for USB composite devices with single or multiple HID interfaces.</p>
+
+            </td></tr>
+
+          </tbody></table>
+         </td>
+
+         <td width="22%">
+          <table width="100%" border="0" cellspacing="4" cellpadding="0">
+           <tbody><tr><td align="left">
+            <table height="30" width="100%" border="0" cellspacing="3" cellpadding="0">
+             <tbody><tr>
+              <td align="left" valign="top"><a type="application/rss+xml" href="http://www.usblyzer.com/rss.xml" title="Subscribe to usblyzer.com RSS feed"><img align="left" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/rss2.gif" width="44" height="16" border="0" alt="Subscribe to USBlyzer RSS feed"></a></td>
+              <td align="left" valign="top">
+               <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4e5cb0527cda27dd"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/sm-share-en.gif" width="83" height="16" alt="Bookmark and Share" style="border:0"></a>
+               <script type="text/javascript" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/addthis_widget.js.descarga"></script>
+              </td>
+             </tr>
+            </tbody></table>
+           </td></tr>
+           <tr><td class="line"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/1.gif" alt="" width="1" height="1" border="0"></td></tr>
+           <tr><td align="left">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+             <tbody><tr>
+              <td align="left"><a href="http://www.usblyzer.com/events.htm" title="usblyzer.com Latest Events"><b>Latest Events</b></a></td>
+             </tr>
+            </tbody></table>
+           </td></tr>
+           <tr><td class="line"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/1.gif" alt="" width="1" height="1" border="0"></td></tr>
+           <tr><td align="left" class="date"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/blue-diamond.gif" alt="" height="7" width="7" border="0">&nbsp;May&nbsp;15,&nbsp;2016</td></tr>
+           <tr><td align="left">USBlyzer 2.2 has been released.<p style="font-size:90%;"><i>- USB Mass Storage Class support added.<br>[<a href="http://www.usblyzer.com/events.htm#ev014" title="USBlyzer 2.2 - What&#39;s new">...</a>]</i></p></td></tr>
+           <tr><td class="line"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/1.gif" alt="" width="1" height="1" border="0"></td></tr>
+           <tr><td align="left" class="date"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/blue-diamond.gif" alt="" height="7" width="7" border="0">&nbsp;March&nbsp;16,&nbsp;2014</td></tr>
+           <tr><td align="left">USBlyzer 2.1 has been released.<p style="font-size:90%;"><i>- USB 3.0 support added.<br>[<a href="http://www.usblyzer.com/events.htm#ev013" title="USBlyzer 2.1 - What&#39;s new">...</a>]</i></p></td></tr>
+           <tr><td class="line"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/1.gif" alt="" width="1" height="1" border="0"></td></tr>
+           <tr><td align="left" class="date"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/blue-diamond.gif" alt="" height="7" width="7" border="0">&nbsp;April&nbsp;3,&nbsp;2011</td></tr>
+		   <tr><td align="left">USBlyzer 2.0 has been released.<p style="font-size:90%;"><i>- 64-bit OS support.<br>- Elapsed and duration time measuring.<br>[<a href="http://www.usblyzer.com/events.htm#ev012" title="USBlyzer 2.0 - What&#39;s new">...</a>]</i></p></td></tr>
+           <tr><td class="line"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/1.gif" alt="" width="1" height="1" border="0"></td></tr>
+          </tbody></table>
+         </td>
+
+        </tr>
+       </tbody></table>
+      </td>
+     </tr>
+    </tbody></table>
+
+   </td>
+  </tr>
+
+  <!--  footer -->
+  <tr><td valign="bottom">  
+   <table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+    <td align="left" bgcolor="#3A5793" height="1"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/blue-grad-left.gif" alt="" height="1" width="88" border="0"></td>
+    <td align="right" bgcolor="#3A5793" height="1"><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/blue-grad-right.gif" alt="" height="1" width="88" border="0"></td>
+   </tr></tbody></table>
+   <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr><td><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/1.gif" alt="" width="1" height="4" border="0"></td></tr>
+    <tr><td align="center" class="copyright"><a class="footer" href="http://www.usblyzer.com/terms.htm" rel="nofollow">Terms of Use</a>&nbsp;:&nbsp;<a class="footer" href="http://www.usblyzer.com/privacy.htm" rel="nofollow">Privacy Policy</a>&nbsp;:&nbsp;<a class="footer" href="http://www.usblyzer.com/sitemap.htm">Site Map</a></td></tr>
+    <tr><td align="center" class="copyright">© 2006-2017 <a class="footer" href="javascript:window.location=&#39;http://www.usblyzer.com/&#39;">USBlyzer Team</a>.&nbsp;All rights reserved.</td></tr>
+   </tbody></table>
+  </td></tr>
+
+ </tbody></table><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;"><iframe id="_atssh734" title="AddThis utility frame" src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/sh.f48a1a04fe8dbf021b4cda1d.html" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px; left: 0px;"></iframe></div><style id="service-icons-0"></style>
+
+
+
+<div class="highslide-container" style="padding: 0px; border: none; margin: 0px; position: absolute; left: 0px; top: 0px; width: 100%; z-index: 1001; direction: ltr;"><a class="highslide-loading" title="Click to cancel" href="javascript:;" style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;">Loading...</a><div style="display: none;"></div><table cellspacing="0" style="padding: 0px; border: none; margin: 0px; visibility: hidden; position: absolute; border-collapse: collapse; width: 0px;"><tbody style="padding: 0px; border: none; margin: 0px;"><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;http://www.usblyzer.com/js/highslide/graphics/outlines/rounded-white.png&quot;) 0px 0px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;http://www.usblyzer.com/js/highslide/graphics/outlines/rounded-white.png&quot;) 0px -40px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;http://www.usblyzer.com/js/highslide/graphics/outlines/rounded-white.png&quot;) -20px 0px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;http://www.usblyzer.com/js/highslide/graphics/outlines/rounded-white.png&quot;) 0px -80px; height: 20px; width: 20px;"></td><td class="rounded-white highslide-outline" style="padding: 0px; border: none; margin: 0px; position: relative;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;http://www.usblyzer.com/js/highslide/graphics/outlines/rounded-white.png&quot;) -20px -80px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;http://www.usblyzer.com/js/highslide/graphics/outlines/rounded-white.png&quot;) 0px -20px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;http://www.usblyzer.com/js/highslide/graphics/outlines/rounded-white.png&quot;) 0px -60px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;http://www.usblyzer.com/js/highslide/graphics/outlines/rounded-white.png&quot;) -20px -20px; height: 20px; width: 20px;"></td></tr></tbody></table><img src="./Human Interface Device Class Decoder - HID Descriptor, HID Report, HID Request Visualizer_files/rounded-white.png" style="padding: 0px; border: none; margin: 0px; position: absolute; top: -9999px;"></div></body></html>

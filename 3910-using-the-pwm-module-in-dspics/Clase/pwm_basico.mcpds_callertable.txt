@@ -1,0 +1,42 @@
+main
+	Unlock_IOLOCK
+	PPS_Mapping
+		_PPS_Mapping
+			Unlock_IOLOCK
+			Lock_IOLOCK
+	Lock_IOLOCK
+	UART1_Init
+		Get_Fosc_kHz
+		Get_Fosc_Per_Cyc
+		Delay_100ms
+		_Multiply_32x32
+		_Modulus_32x32
+		_Divide_32x32
+	UART1_Write_Text
+		UART1_Write
+	pwm_init_basico
+	servo1
+		map
+			_Sub_FP
+				_AddSub_FP
+			_Div_FP
+			_Mul_FP
+			_AddSub_FP
+		_Long2Float
+		_Mul_FP
+		_Div_FP
+		_Float2Longint
+	servo1_ecu
+		_Mul_FP
+		_AddSub_FP
+		_Float2Longint
+	pwm2
+		_Long2Float
+		_Mul_FP
+		_Div_FP
+		_Float2Longint
+	_Long2Float
+aritmetrico
+pilaInt
+direccionInt
+osciladorInt

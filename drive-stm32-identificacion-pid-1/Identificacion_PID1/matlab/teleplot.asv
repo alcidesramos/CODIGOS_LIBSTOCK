@@ -1,0 +1,24 @@
+clc ,clear all, close all
+
+data = readmatrix('teleplot.csv');
+
+
+% Extraer columnas 2 y 3
+var1 = data(:, 2);  % Segunda columna
+var2 = data(:, 3);  % Tercera columna
+
+% Crear gráfico 1
+figure(1);
+plot(var1, 'b');
+title('Variable 1 (Columna 2)');
+xlabel('Muestra');
+ylabel('Valor');
+grid on;
+
+% Crear gráfico 2
+figure(2);
+plot(var2, 'r');
+title('Variable 2 (Columna 3)');
+xlabel('Muestra');
+ylabel('Valor');
+grid on;

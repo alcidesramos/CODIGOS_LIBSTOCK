@@ -1,0 +1,7 @@
+main
+	DAC_Initialize
+	ADC_Read
+		ADC_Init
+		ADC_Get_Sample
+			Delay_22us
+	DAC_SetOutput

@@ -1,0 +1,181 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12F629 ]
+[d frameptr 6 ]
+"28 C:\Users\Alcides Ramos\Desktop\Software uart\CLASE\XC8\soft_uart_prueba.X/Software_Uart.h
+[v _SoftWareUart_Init SoftWareUart_Init `(v  1 e 1 0 ]
+"41
+[v _Software_UART_Write Software_UART_Write `(v  1 e 1 0 ]
+"59
+[v _Software_UART_Write_Text Software_UART_Write_Text `(v  1 e 1 0 ]
+"65
+[v _Software_UART_Write_Text_Const Software_UART_Write_Text_Const `(v  1 e 1 0 ]
+"71
+[v _Software_UART_Read Software_UART_Read `(uc  1 e 1 0 ]
+"87
+[v _Software_UART_Read_Text Software_UART_Read_Text `(v  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\itoa.c
+[v _itoa itoa `(*.4uc  1 e 1 0 ]
+"17
+[v _utoa utoa `(*.4uc  1 e 1 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"60 C:\Users\Alcides Ramos\Desktop\Software uart\CLASE\XC8\soft_uart_prueba.X\prueba.c
+[v _main main `(v  1 e 1 0 ]
+[s S22 . 1 `uc 1 GP0 1 0 :1:0 
+`uc 1 GP1 1 0 :1:1 
+`uc 1 GP2 1 0 :1:2 
+`uc 1 GP3 1 0 :1:3 
+`uc 1 GP4 1 0 :1:4 
+`uc 1 GP5 1 0 :1:5 
+]
+"241 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic12f629.h
+[s S29 . 1 `uc 1 GPIO0 1 0 :1:0 
+`uc 1 GPIO1 1 0 :1:1 
+`uc 1 GPIO2 1 0 :1:2 
+`uc 1 GPIO3 1 0 :1:3 
+`uc 1 GPIO4 1 0 :1:4 
+`uc 1 GPIO5 1 0 :1:5 
+]
+[u S36 . 1 `S22 1 . 1 0 `S29 1 . 1 0 ]
+[v _GPIObits GPIObits `VES36  1 e 1 @5 ]
+"564
+[v _CMCON CMCON `VEuc  1 e 1 @25 ]
+[s S54 . 1 `uc 1 TRISIO0 1 0 :1:0 
+`uc 1 TRISIO1 1 0 :1:1 
+`uc 1 TRISIO2 1 0 :1:2 
+`uc 1 TRISIO3 1 0 :1:3 
+`uc 1 TRISIO4 1 0 :1:4 
+`uc 1 TRISIO5 1 0 :1:5 
+]
+"708
+[u S61 . 1 `S54 1 . 1 0 ]
+[v _TRISIObits TRISIObits `VES61  1 e 1 @133 ]
+"55 C:\Users\Alcides Ramos\Desktop\Software uart\CLASE\XC8\soft_uart_prueba.X\prueba.c
+[v _contador contador `uc  1 e 1 0 ]
+"56
+[v _dato dato `uc  1 e 1 0 ]
+"57
+[v _texto texto `[10]uc  1 e 10 0 ]
+"60
+[v _main main `(v  1 e 1 0 ]
+{
+"99
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\itoa.c
+[v _itoa itoa `(*.4uc  1 e 1 0 ]
+{
+[v itoa@buf buf `*.4uc  1 a 1 wreg ]
+"6
+[v itoa@cp cp `*.4uc  1 a 1 22 ]
+"4
+[v itoa@buf buf `*.4uc  1 a 1 wreg ]
+[v itoa@val val `i  1 p 2 17 ]
+[v itoa@base base `i  1 p 2 19 ]
+"6
+[v itoa@buf buf `*.4uc  1 a 1 23 ]
+"14
+} 0
+"17
+[v _utoa utoa `(*.4uc  1 e 1 0 ]
+{
+[v utoa@buf buf `*.4uc  1 a 1 wreg ]
+"19
+[v utoa@v v `ui  1 a 2 13 ]
+"20
+[v utoa@c c `uc  1 a 1 15 ]
+"17
+[v utoa@buf buf `*.4uc  1 a 1 wreg ]
+[v utoa@val val `ui  1 p 2 8 ]
+[v utoa@base base `i  1 p 2 10 ]
+"22
+[v utoa@buf buf `*.4uc  1 a 1 16 ]
+"37
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"65 C:\Users\Alcides Ramos\Desktop\Software uart\CLASE\XC8\soft_uart_prueba.X/Software_Uart.h
+[v _Software_UART_Write_Text_Const Software_UART_Write_Text_Const `(v  1 e 1 0 ]
+{
+[v Software_UART_Write_Text_Const@Text Text `*.24DCuc  1 a 1 wreg ]
+[v Software_UART_Write_Text_Const@Text Text `*.24DCuc  1 a 1 wreg ]
+[v Software_UART_Write_Text_Const@Text Text `*.24DCuc  1 a 1 5 ]
+"68
+} 0
+"59
+[v _Software_UART_Write_Text Software_UART_Write_Text `(v  1 e 1 0 ]
+{
+[v Software_UART_Write_Text@Text Text `*.26uc  1 p 2 4 ]
+"62
+} 0
+"41
+[v _Software_UART_Write Software_UART_Write `(v  1 e 1 0 ]
+{
+[v Software_UART_Write@Data Data `uc  1 a 1 wreg ]
+"43
+[v Software_UART_Write@mask mask `uc  1 a 1 3 ]
+"41
+[v Software_UART_Write@Data Data `uc  1 a 1 wreg ]
+"44
+[v Software_UART_Write@Data Data `uc  1 a 1 2 ]
+"56
+} 0
+"87
+[v _Software_UART_Read_Text Software_UART_Read_Text `(v  1 e 1 0 ]
+{
+[v Software_UART_Read_Text@Buffer Buffer `*.4uc  1 a 1 wreg ]
+"89
+[v Software_UART_Read_Text@con_t con_t `ui  1 a 2 8 ]
+"87
+[v Software_UART_Read_Text@Buffer Buffer `*.4uc  1 a 1 wreg ]
+[v Software_UART_Read_Text@StopChar StopChar `uc  1 p 1 4 ]
+[v Software_UART_Read_Text@tama tama `ui  1 p 2 5 ]
+"89
+[v Software_UART_Read_Text@Buffer Buffer `*.4uc  1 a 1 10 ]
+"98
+} 0
+"71
+[v _Software_UART_Read Software_UART_Read `(uc  1 e 1 0 ]
+{
+"73
+[v Software_UART_Read@mask mask `uc  1 a 1 3 ]
+"74
+[v Software_UART_Read@Data Data `uc  1 a 1 2 ]
+"85
+} 0
+"28
+[v _SoftWareUart_Init SoftWareUart_Init `(v  1 e 1 0 ]
+{
+"36
+} 0

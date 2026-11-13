@@ -1,0 +1,47 @@
+[PROJECT]
+Target=CICLO.hex
+Processor_Text=PIC16F1824
+CCSVerions=5.076
+Compiler=PCM
+CCSVersion=5.076
+[Target Data]
+FileList=CICLO.c
+[Directories]
+Include=
+[C:\Users\Alcides Ramos\Desktop\compiladores\CANAL\CCS\CICLO]
+Type=4
+[mru-list]
+1=CICLO.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=16-09-2019
+D1_L=6
+D1_L1=[33004]Project Opened.
+D1_L2=[33009]Started Editing.
+D1_L3=[33192]Stopped Editing.
+TotalEdit=4
+TotalDebug=0
+D1_E=4
+D1_D=0
+D1_L4=[33192]Project Closed.
+D1_L5=[33509]Project Opened.
+D1_L6=[34542]Project Closed.
+
+[Opened Files]
+1=CICLO.c
+t1=1
+Count=2
+2=CICLO.sta
+t2=-1
+[CICLO.c]
+Type=4
+
+[defines]
+buildcount=2
+[Units]
+Count=1
+1=CICLO (main)

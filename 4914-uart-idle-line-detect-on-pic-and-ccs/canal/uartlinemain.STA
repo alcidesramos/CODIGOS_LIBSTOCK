@@ -1,0 +1,59 @@
+
+ROM used:   760/32768 (2%)
+            760/32768 (2%) including unused fragments
+
+            0.5 Average locations per line
+            20.0 Average locations per statement
+
+RAM used:   104/2048 (5%) at main() level
+            113/2048 (6%) worst case
+
+Stack used: 1 worst case (0 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   89    38 100  uartlinemain.c
+   10     0   0  uartlinemain.h
+  800     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F2550.h
+   37     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h
+  435     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   32     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+   28     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+----- -----
+ 1431    38 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     42   3    1             @delay_ms1
+0    134   9    9    318  6.5  strstr
+0     20   1    0    115  1.7  TIMER0_isr
+0     54   4    2    230  4.1  RDA_isr
+0    218  14    2    626  4.2  MAIN
+0     40   3    2             @PSTRINGR_9600_31766_31767
+0     22   1    0             @const795
+0     20   1    0             @const796
+0     28   2    0             @MEMSET
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               4
+    Statements              38
+    Comments                256
+    Volume (V)              1747
+    Difficulty (D)          15.6
+    Effort to implement (E) 27172
+    Time to implement (T)   25 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   6
+    Maintainability (MI)    94
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000B8   178  0  
+000BA-07FFE   578  32004  
+
+
+

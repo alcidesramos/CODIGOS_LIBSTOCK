@@ -1,0 +1,15 @@
+switch (variable_analizar)
+{
+    case 0:
+
+           break;
+    case 3: 
+
+          break;
+
+    default :
+
+
+           break;
+
+}

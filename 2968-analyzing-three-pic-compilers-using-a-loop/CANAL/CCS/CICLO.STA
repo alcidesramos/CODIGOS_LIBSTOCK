@@ -1,0 +1,47 @@
+
+ROM used:   58/4096 (1%)
+            58/4096 (1%) including unused fragments
+
+            0.1 Average locations per line
+            9.7 Average locations per statement
+
+RAM used:   5/255 (2%) at main() level
+            17/255 (7%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 16
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   25     6 100  CICLO.c
+    6     0   0  CICLO.h
+  924     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F1824.h
+----- -----
+  955     6 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     23  40    1             @delay_ms1
+0     32  55    0    134  3.4  main
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               1
+    Statements              6
+    Comments                159
+    Volume (V)              138
+    Difficulty (D)          3.0
+    Effort to implement (E) 413
+    Time to implement (T)   0 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    148
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     3  0  
+00003-007FF    55  1990  
+00800-00FFF     0  2048  
+
+
+

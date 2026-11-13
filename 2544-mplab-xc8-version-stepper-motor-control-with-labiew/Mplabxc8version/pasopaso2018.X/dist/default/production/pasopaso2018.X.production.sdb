@@ -1,0 +1,527 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1824 ]
+[d frameptr 6 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"464 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
+[v _memset memset `(*.4v  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strchr.c
+[v _strchr strchr `(*.26uc  1 e 1 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcpy.c
+[v _strcpy strcpy `(*.4uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strstr.c
+[v _strstr strstr `(*.26uc  1 e 1 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strtok.c
+[v _strtok strtok `(*.4uc  1 e 1 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"93 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\main.c
+[v _saca_secuencia1 saca_secuencia1 `(v  1 e 1 0 ]
+"102
+[v _saca_secuencia2 saca_secuencia2 `(v  1 e 1 0 ]
+"112
+[v _derecha1 derecha1 `(v  1 e 1 0 ]
+"119
+[v _izquierda1 izquierda1 `(v  1 e 1 0 ]
+"126
+[v _derecha2 derecha2 `(v  1 e 1 0 ]
+"133
+[v _izquierda2 izquierda2 `(v  1 e 1 0 ]
+"140
+[v _procesarx procesarx `(v  1 e 1 0 ]
+"200
+[v _mi_interrupcion mi_interrupcion `(v  1 e 1 0 ]
+"291
+[v _main main `(v  1 e 1 0 ]
+"56 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"93
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"111
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"125
+[v _putch putch `(v  1 e 1 0 ]
+"54 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"60
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"74
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"57 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"125
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"129
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+[s S116 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"372 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1824.h
+[s S125 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S130 . 1 `S116 1 . 1 0 `S125 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES130  1 e 1 @11 ]
+[s S257 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"544
+[u S266 . 1 `S257 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES266  1 e 1 @17 ]
+"680
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"1113
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1163
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1366
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+[s S416 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1389
+[s S425 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S430 . 1 `S416 1 . 1 0 `S425 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES430  1 e 1 @149 ]
+"1500
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1559
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1617
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1950
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1995
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2317
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2666
+[v _APFCON0 APFCON0 `VEuc  1 e 1 @285 ]
+"2727
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @286 ]
+"2765
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2812
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3052
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3072
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3108
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"3158
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3191
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S299 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3208
+[u S308 . 1 `S299 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES308  1 e 1 @413 ]
+"3253
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S278 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3270
+[u S287 . 1 `S278 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES287  1 e 1 @414 ]
+"3315
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3367
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3425
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"6690
+[v _CREN CREN `VEb  1 e 0 @3308 ]
+"6758
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"6848
+[v _LATA0 LATA0 `VEb  1 e 0 @2144 ]
+"6850
+[v _LATA1 LATA1 `VEb  1 e 0 @2145 ]
+"6852
+[v _LATA2 LATA2 `VEb  1 e 0 @2146 ]
+"6854
+[v _LATA4 LATA4 `VEb  1 e 0 @2148 ]
+"6856
+[v _LATA5 LATA5 `VEb  1 e 0 @2149 ]
+"6858
+[v _LATC0 LATC0 `VEb  1 e 0 @2160 ]
+"6860
+[v _LATC1 LATC1 `VEb  1 e 0 @2161 ]
+"6862
+[v _LATC2 LATC2 `VEb  1 e 0 @2162 ]
+"6864
+[v _LATC3 LATC3 `VEb  1 e 0 @2163 ]
+"6930
+[v _OERR OERR `VEb  1 e 0 @3305 ]
+"6990
+[v _PLLR PLLR `VEb  1 e 0 @1238 ]
+"7044
+[v _RCIE RCIE `VEb  1 e 0 @1165 ]
+"7046
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+"7172
+[v _T0IE T0IE `VEb  1 e 0 @93 ]
+"7174
+[v _T0IF T0IF `VEb  1 e 0 @90 ]
+[s S57 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+"21 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\main.c
+[u S66 . 1 `uc 1 byte 1 0 `S57 1 . 1 0 ]
+[v _codigo1 codigo1 `[4]S66  1 e 4 0 ]
+"22
+[v _codigo2 codigo2 `[4]S66  1 e 4 0 ]
+"31
+[v _secuencia1 secuencia1 `c  1 e 1 0 ]
+"32
+[v _secuencia2 secuencia2 `c  1 e 1 0 ]
+"37
+[v _velo_m1 velo_m1 `uc  1 e 1 0 ]
+[v _velo_m2 velo_m2 `uc  1 e 1 0 ]
+"39
+[v _n_pasos1 n_pasos1 `ul  1 e 4 0 ]
+[v _n_pasos2 n_pasos2 `ul  1 e 4 0 ]
+"41
+[v _pasos1 pasos1 `ul  1 e 4 0 ]
+[v _pasos2 pasos2 `ul  1 e 4 0 ]
+"43
+[v _velo1 velo1 `uc  1 e 1 0 ]
+[v _velo2 velo2 `uc  1 e 1 0 ]
+"45
+[v _n_pasos n_pasos `DCuc  1 e 1 0 ]
+"75
+[v _estado_giro1 estado_giro1 `uc  1 e 1 0 ]
+[v _estado_giro2 estado_giro2 `uc  1 e 1 0 ]
+"76
+[v _estado_modo1 estado_modo1 `uc  1 e 1 0 ]
+[v _estado_modo2 estado_modo2 `uc  1 e 1 0 ]
+"82
+[v _trama_rx trama_rx `[30]uc  1 e 30 0 ]
+"83
+[v _procesa procesa `[30]uc  1 e 30 0 ]
+"84
+[v _dato dato `uc  1 e 1 0 ]
+"87
+[v _datorx datorx `uc  1 e 1 0 ]
+"88
+[v _puntero puntero `uc  1 e 1 0 ]
+"89
+[v _flag_rx flag_rx `uc  1 e 1 0 ]
+"58 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/tmr0.c
+[v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
+"59
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"291 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"346
+} 0
+"140
+[v _procesarx procesarx `(v  1 e 1 0 ]
+{
+"198
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strtok.c
+[v _strtok strtok `(*.4uc  1 e 1 0 ]
+{
+[v strtok@s1 s1 `*.4uc  1 a 1 wreg ]
+[v strtok@s1 s1 `*.4uc  1 a 1 wreg ]
+[v strtok@s2 s2 `*.25DCuc  1 p 2 14 ]
+"15
+[v strtok@sp sp `*.4uc  1 s 1 sp ]
+"18
+[v strtok@s1 s1 `*.4uc  1 a 1 19 ]
+"31
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+{
+[v strspn@s1 s1 `*.4DCuc  1 a 1 wreg ]
+"6
+[v strspn@i i `ui  1 a 2 11 ]
+"4
+[v strspn@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strspn@s2 s2 `*.25DCuc  1 p 2 7 ]
+"8
+[v strspn@s1 s1 `*.4DCuc  1 a 1 13 ]
+"14
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+{
+[v strcspn@s1 s1 `*.4DCuc  1 a 1 wreg ]
+"6
+[v strcspn@i i `ui  1 a 2 11 ]
+"4
+[v strcspn@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strcspn@s2 s2 `*.25DCuc  1 p 2 7 ]
+"8
+[v strcspn@s1 s1 `*.4DCuc  1 a 1 13 ]
+"14
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strstr.c
+[v _strstr strstr `(*.26uc  1 e 1 0 ]
+{
+[v strstr@s1 s1 `*.26DCuc  1 p 2 14 ]
+[v strstr@s2 s2 `*.25DCuc  1 p 2 16 ]
+"12
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+[v strncmp@s1 s1 `*.26DCuc  1 p 2 6 ]
+[v strncmp@s2 s2 `*.25DCuc  1 p 2 8 ]
+[v strncmp@len len `ui  1 p 2 10 ]
+"14
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"6
+[v strlen@cp cp `*.25DCuc  1 a 2 4 ]
+"4
+[v strlen@s s `*.25DCuc  1 p 2 0 ]
+"13
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strchr.c
+[v _strchr strchr `(*.26uc  1 e 1 0 ]
+{
+[v strchr@ptr ptr `*.26DCuc  1 p 2 0 ]
+[v strchr@chr chr `i  1 p 2 2 ]
+"11
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcpy.c
+[v _strcpy strcpy `(*.4uc  1 e 1 0 ]
+{
+[v strcpy@to to `*.4uc  1 a 1 wreg ]
+"15
+[v strcpy@cp cp `*.4uc  1 a 1 22 ]
+"8
+[v strcpy@to to `*.4uc  1 a 1 wreg ]
+[v strcpy@from from `*.4DCuc  1 p 1 20 ]
+"18
+[v strcpy@to to `*.4uc  1 a 1 23 ]
+"24
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
+[v _memset memset `(*.4v  1 e 1 0 ]
+{
+[v memset@p1 p1 `*.4v  1 a 1 wreg ]
+"15
+[v memset@p p `*.4uc  1 a 1 5 ]
+"8
+[v memset@p1 p1 `*.4v  1 a 1 wreg ]
+[v memset@c c `i  1 p 2 0 ]
+[v memset@n n `ui  1 p 2 2 ]
+"18
+[v memset@p1 p1 `*.4v  1 a 1 6 ]
+"22
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+[v atoi@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v atoi@a a `i  1 a 2 11 ]
+"8
+[v atoi@sign sign `uc  1 a 1 10 ]
+"5
+[v atoi@s s `*.4DCuc  1 a 1 wreg ]
+[v atoi@s s `*.4DCuc  1 a 1 13 ]
+"24
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"464 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"499
+[v printf@c c `c  1 a 1 8 ]
+"466
+[v printf@ap ap `[1]*.4v  1 a 1 7 ]
+"464
+[v printf@f f `*.25DCuc  1 p 2 2 ]
+"1541
+} 0
+"125 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/eusart.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 wreg ]
+"127
+[v putch@txData txData `uc  1 a 1 1 ]
+"128
+} 0
+"111
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 0 ]
+"118
+} 0
+"50 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"74
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
+"64 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"125
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"127
+} 0
+"57 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"99
+} 0
+"60 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"56 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"54 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"57
+} 0
+"200 C:\Users\Alcides_Ramos\Desktop\paso paso\Mplabxc8version\pasopaso2018.X\main.c
+[v _mi_interrupcion mi_interrupcion `(v  1 e 1 0 ]
+{
+"286
+} 0
+"133
+[v _izquierda2 izquierda2 `(v  1 e 1 0 ]
+{
+"138
+} 0
+"119
+[v _izquierda1 izquierda1 `(v  1 e 1 0 ]
+{
+"124
+} 0
+"126
+[v _derecha2 derecha2 `(v  1 e 1 0 ]
+{
+"131
+} 0
+"102
+[v _saca_secuencia2 saca_secuencia2 `(v  1 e 1 0 ]
+{
+"109
+} 0
+"112
+[v _derecha1 derecha1 `(v  1 e 1 0 ]
+{
+"117
+} 0
+"93
+[v _saca_secuencia1 saca_secuencia1 `(v  1 e 1 0 ]
+{
+"100
+} 0

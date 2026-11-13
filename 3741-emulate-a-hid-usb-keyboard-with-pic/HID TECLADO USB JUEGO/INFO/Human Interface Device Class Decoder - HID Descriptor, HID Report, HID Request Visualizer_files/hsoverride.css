@@ -1,0 +1,13 @@
+/*   Highslide JS Override Stiles */
+.highslide img {
+	border: 0px solid silver;
+}
+.highslide-image {
+	border: 0px solid silver;
+}
+.highslide-caption {
+	padding: .3em 0;
+	font-size: .2em;
+	text-align:center;
+	color:#999;
+}

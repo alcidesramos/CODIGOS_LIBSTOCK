@@ -1,0 +1,90 @@
+<html>
+<head>
+<!-- saved from url=(0021)http://www.nch.com.au -->
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Working with Tones</title>
+<link rel=STYLESHEET href="hlp.css" type="text/css">
+</head>
+
+<body>
+<script type="text/javascript" language="JavaScript" src="help.js"></script>
+<script type="text/javascript" language="JavaScript">HelpHeader("NCH Tone Generator","3.07","Working with Tones","introduction.html","lists.html");</script>
+  <p>
+NCH Tone Generator allows you to create, save and play tones.</p>
+  <p>
+A tone can be as simple as a sine wave of a given frequency. It can also be as complex as a stereophonic tone, where each channel consists of a number of simultaneous tones of different frequency settings. Attributes of tones can be changed either via the Tone menu, via the small toolbar, or via the context menu brought up by right clicking the tone items.</p>
+     <p>
+Tones can be saved as either a wave file (.wav) or a tone file (.tdf). Note that tones of unspecific durations, or to be played repeatedly, cannot be saved in wave format.</p>
+    <h2>Step 1. Select the Tone using the Tone menu</h2>  <dl><dt>Number of Tones</dt><dd>    <p>
+NCH Tone Generator can create up to 16 simultaneous tones. This can be useful for creating harmonics or beats.</p>
+    <p>
+Select the number of tones using the &quot;Number of Tones&quot; item of the Tone menu. The default number of tones is 1.</p>
+   </dd><dt>Constant (Continuous)</dt><dd>    <p>
+If you select a &quot;Constant (Continuous)&quot; tone, it does not have a limited duration and will play forever.</p>
+   </dd><dt>Constant (Specified Duration)</dt><dd>    <p>
+Selecting this option means that the tone is constant (does not change frequency), but will only play for a specified duration. The duration is specified in the Tone Details List (see below).</p>
+   </dd><dt>Sweep (Linear)</dt><dd>    <p>
+If you select this option, you will be able to specify the start and end frequency of each tone. The time-frequency movement is linear (e.g., 100Hz per second).</p>
+   </dd><dt>Sweep (Log)</dt><dd>    <p>
+This is also a tone sweep, but the time-frequency movement is exponential (e.g., 1 octave per second).</p>
+   </dd><dt>Mono / Stereo</dt><dd>    <p>
+By default, NCH Tone Generator creates a mono tone. If you select stereo, different tones can be created in the left and right speakers. This can be useful to create 'beats'.</p>
+   </dd><dt>Sine Waveform</dt><dd>    <p>
+The Sine/Cosine waveform is the most pure waveform because it contains no harmonics. It is recommended for level calibration (because it is not affected by frequency response). </p>
+   </dd><dt>Square Waveform</dt><dd>    <p>
+The square waveform sounds harsh because it contains many higher order odd harmonics. It can be useful when the waveform is viewed after being processed.</p>
+   </dd><dt>Triangular Waveform</dt><dd>    <p>
+The triangluar waveform is composed by the fundamental and its odd harmonics, which roll off much faster than in the case of the square wave.</p>
+   </dd><dt>Sawtooth Waveform</dt><dd>    <p>
+The sawtooth waveform contains a blend of both odd and even harmonics. Sawtooth waves often form the basis for virtual music synthesizers.</p>
+   </dd><dt>Impulse Waveform</dt><dd>    <p>
+This waveform can be useful when analyzing the impulse response function of an audio process.</p>
+   </dd><dt>White Noise</dt><dd>    <p>
+White noise is the noise created by a random signal. It sounds like an un-tuned television set. It is useful for testing the frequency response of a room or audio process.</p>
+    <p>
+White noise has more energy in the higher frequency bands, therefore it sounds brighter than pink noise (see below). Noise does not have a frequency.</p>
+   </dd><dt>Pink Noise</dt><dd>    <p>
+Pink noise is similar to white noise except that it has an equal amount of energy in each octave (down to 20Hz). This can be more useful than white noise when analyzing the signal on an octave scale.</p>
+    <p>
+Because pink noise has more bass energy than white noise, it sounds muffled.</p>
+   </dd><dt>Brown Noise</dt><dd>    <p>
+Brown noise is very similar to pink noise except that it has a spectrum that falls off at 6 dB per octave, whereas pink noise is 3 dB per octave. This results in a very similar noise with a lower tone.</p>
+   </dd><dt>Blue Noise</dt><dd>    <p>
+Blue noise emphasizes higher frequency components, increasing in strength by 3 dB per octave.</p>
+   </dd><dt>Violet Noise</dt><dd>    <p>
+Violet noise is just like blue noise with an increase of 6 dB per octave yielding noise of a higher tone.</p>
+   </dd><dt>Grey Noise</dt><dd>    <p>
+Grey noise has a power spectrum that is designed to align with the human psychoacoustic equal loudness contour, such that the noise sounds equally loud at all frequencies.</p>
+   </dd></dl>  <h2>Step 2. Set the Tone Details (Frequencies / Duration/ Amplitude)</h2>  <p>
+The details of a tone (each frequency and duration) are displayed and edited using the Tone Data list on the main window of NCH Tone Generator. To edit the value of an item, double click on it (or select it and press Enter).</p>
+  <dl><dt>Frequency</dt><dd>    <p>
+This is the frequency of the tone in Hz. This can be between 1Hz and 22000Hz (if supported by your sound card).</p>
+    <p>
+For musicians, the reference â€˜concert Aâ€™ is 440Hz.</p>
+    <p>
+You can move up or down octaves using the PageUp or PageDown keys, or configure the +/- keys to increment or decrement by a frequency of your choice in the Tone Interval section of the Options dialog.</p>
+    <p>
+The Note Selector allows you to quickly choose the exact musical note you want. Expand or collapse the Note Selector by clicking on its title. It will only expand when it makes sense for it to be used. For example, White Noise does not have a frequency, and so the Note Selector is disabled when White Noise is selected.</p>
+    <p>
+The Note Selector consists of a table of note buttons, ranging from C0 to B8, and a frequency slider. Clicking a note button will change the selected frequency to the frequency of that note. Some notes of interest are:      <dl><dt>Concert A:</dt><dd>A4</dd><dt>Middle C:</dt><dd>C4</dd><dt>Lowest note on most pianos:</dt><dd>A0</dd><dt>Highest note on most pianos:</dt><dd>C8</dd><dt>Notes of the strings on a standard-tuned guitar (lowest to highest):</dt><dd>E2, A2, D3, G3, B3, E4</dd></dl></p>
+      <p>
+At the bottom of the Note Selector is the Frequency Slider. Click and drag the red bar on the Frequency Slider to adjust the current frequency.</p>
+   </dd><dt>Duration</dt><dd>    <p>
+Unless you have selected the &quot;Constant (Continuous)&quot; tone, the duration of play can also be specified in ms (milliseconds).</p>
+   </dd><dt>Variable Amplitudes</dt><dd>    <p>
+When the Variable Amplitudes menu item has been enabled from the Tone menu, you may enter relative amplitudes for all the tones in your list. The amplitude can be entered for each separate tone in decibels in the range from 0 dB (full volume) to -127 dB.</p>
+   </dd></dl>  <h2>Step 3. Play the Tone</h2>  <p>
+To start the tone, press either the Space bar on your keyboard, or the Play button on the Tone Generator toolbar. To stop, press the Esc key, or the Stop button on the Tone Generator toolbar.</p>
+  <p>
+The volume can be adjusted using the volume slider at the bottom of the main window. You might also need to select the correct Sound Play Device using the Options dialog.</p>
+  <p>
+You can set the NCH Tone Generator software to automatically start tone playback whenever it runs by ticking the &quot;Automatically start tone playback when Tone Generator runs&quot; check box in the Options dialog.</p>
+  <p>
+If you are using NCH Tone Generator to create a continuous tone, you can also create a shortcut to it in the Windows Start / Programs / Startup folder to make it run automatically when the computer is started.</p>
+ 
+<script type="text/javascript" language="JavaScript" src="help.js"></script>
+<script type="text/javascript" language="JavaScript">HelpFooter("Working with Tones","introduction.html","lists.html","NCH Software","http://www.nch.com.au");</script>
+
+</body>
+</html>

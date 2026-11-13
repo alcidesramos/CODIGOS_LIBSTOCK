@@ -1,0 +1,13 @@
+ÀÄuartlinemain
+   ÃÄMAIN  0/218  Ram=2
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@cinit2  (Inline)  Ram=0
+   ³  ÃÄ@PSTRINGR_9600_31766_31767  0/40  Ram=2
+   ³  ÃÄ@const795  0/22  Ram=0
+   ³  ÃÄstrstr  0/134  Ram=9
+   ³  ÃÄ@const796  0/20  Ram=0
+   ³  ÃÄstrstr  0/134  Ram=9
+   ³  ÃÄ@MEMSET  0/28  Ram=0
+   ³  ÀÄ@delay_ms1  0/42  Ram=1
+   ÃÄTIMER0_isr  0/20  Ram=0
+   ÀÄRDA_isr  0/54  Ram=2

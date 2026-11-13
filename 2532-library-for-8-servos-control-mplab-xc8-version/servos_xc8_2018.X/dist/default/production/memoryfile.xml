@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\servos_xc8_2018.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>2041</used>
+      <free>6151</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>1024</length>
+      <used>108</used>
+      <free>916</free>
+    </memory>
+  </executable>
+</project>

@@ -1,0 +1,63 @@
+operatorset ope {
+   and xfl.prod();
+   or xfl.sum();
+   defuz xfl.FuzzyMean();
+}
+
+type T_error [-1500.0,1500.0;256] {
+  fam[] xfl.sh_triangular(-50.0,-5.0,0.0,5.0,50.0);
+  muynegativo fam[0];
+  negativo fam[1];
+  cero fam[2];
+  positivo fam[3];
+  muyposito fam[4];
+}
+
+type T_Cambio_e [-20.0,20.0;256] {
+  fam[] xfl.sh_triangular(-10.0,-2.0,0.0,2.0,10.0);
+  muynegativo fam[0];
+  negativo fam[1];
+  neutro fam[2];
+  positivo fam[3];
+  muypositivo fam[4];
+}
+
+type T_pwm [0.0,255.0;256] {
+  minimo xfl.singleton(0.0);
+  bajo xfl.singleton(63.75);
+  medio xfl.singleton(127.5);
+  alto xfl.singleton(191.25);
+  maximo xfl.singleton(255.0);
+}
+
+rulebase reglas (T_error error, T_Cambio_e Cambio_e : T_pwm pwm) using ope {
+  if(error == muynegativo & Cambio_e == muynegativo) -> pwm = minimo;
+  if(error == muynegativo & Cambio_e == negativo) -> pwm = minimo;
+  if(error == muynegativo & Cambio_e == neutro) -> pwm = bajo;
+  if(error == muynegativo & Cambio_e == positivo) -> pwm = bajo;
+  if(error == muynegativo & Cambio_e == muypositivo) -> pwm = medio;
+  if(error == negativo & Cambio_e == muynegativo) -> pwm = minimo;
+  if(error == negativo & Cambio_e == negativo) -> pwm = minimo;
+  if(error == negativo & Cambio_e == neutro) -> pwm = medio;
+  if(error == negativo & Cambio_e == positivo) -> pwm = medio;
+  if(error == negativo & Cambio_e == muypositivo) -> pwm = alto;
+  if(error == cero & Cambio_e == muynegativo) -> pwm = minimo;
+  if(error == cero & Cambio_e == negativo) -> pwm = minimo;
+  if(error == cero & Cambio_e == neutro) -> pwm = minimo;
+  if(error == cero & Cambio_e == positivo) -> pwm = bajo;
+  if(error == cero & Cambio_e == muypositivo) -> pwm = bajo;
+  if(error == positivo & Cambio_e == muynegativo) -> pwm = bajo;
+  if(error == positivo & Cambio_e == negativo) -> pwm = bajo;
+  if(error == positivo & Cambio_e == neutro) -> pwm = medio;
+  if(error == positivo & Cambio_e == positivo) -> pwm = alto;
+  if(error == positivo & Cambio_e == muypositivo) -> pwm = alto;
+  if(error == muyposito & Cambio_e == muynegativo) -> pwm = medio;
+  if(error == muyposito & Cambio_e == negativo) -> pwm = medio;
+  if(error == muyposito & Cambio_e == neutro) -> pwm = alto;
+  if(error == muyposito & Cambio_e == positivo) -> pwm = maximo;
+  if(error == muyposito & Cambio_e == muypositivo) -> pwm = maximo;
+}
+
+system (T_error error, T_Cambio_e Cambio_e : T_pwm pwm) {
+  reglas(error, Cambio_e : pwm);
+ }

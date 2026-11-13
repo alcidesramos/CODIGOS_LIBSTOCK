@@ -1,0 +1,20 @@
+switch (variable_analizar)
+{
+    case 0:  acciones
+              analiza una condicion_es
+            {
+             se prepara para entrar al siguiente estado
+             pasa al el estado deseado.
+
+            }
+           break;
+    case 3: 
+
+          break;
+
+    default :
+
+
+           break;
+
+}

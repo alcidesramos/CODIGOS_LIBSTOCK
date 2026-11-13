@@ -1,0 +1,572 @@
+[p LITE_MODE AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F2550 ]
+[d frameptr 4065 ]
+"100 C:\Users\Alcides Ramos\Desktop\RFID2019\xc8\rfid_xc8.X/RC522.h
+[v _MFRC522_Wr MFRC522_Wr `(v  1 s 1 MFRC522_Wr ]
+"107
+[v _MFRC522_Rd MFRC522_Rd `(uc  1 s 1 MFRC522_Rd ]
+"116
+[v _MFRC522_Clear_Bit MFRC522_Clear_Bit `(v  1 s 1 MFRC522_Clear_Bit ]
+"120
+[v _MFRC522_Set_Bit MFRC522_Set_Bit `(v  1 s 1 MFRC522_Set_Bit ]
+"124
+[v _MFRC522_Reset MFRC522_Reset `(v  1 e 1 0 ]
+"128
+[v _MFRC522_AntennaOn MFRC522_AntennaOn `(v  1 e 1 0 ]
+"136
+[v _MFRC522_Init MFRC522_Init `(v  1 e 1 0 ]
+"158
+[v _MFRC522_ToCard MFRC522_ToCard `(uc  1 e 1 0 ]
+"261
+[v _MFRC522_Request MFRC522_Request `(uc  1 e 1 0 ]
+"274
+[v _MFRC522_CRC MFRC522_CRC `(v  1 e 1 0 ]
+"421
+[v _MFRC522_AntiColl MFRC522_AntiColl `(uc  1 e 1 0 ]
+"451
+[v _MFRC522_isCard MFRC522_isCard `(uc  1 e 1 0 ]
+"458
+[v _MFRC522_ReadCardSerial MFRC522_ReadCardSerial `(uc  1 e 1 0 ]
+"48 C:\Users\Alcides Ramos\Desktop\RFID2019\xc8\rfid_xc8.X/soft_spi.h
+[v _Soft_SPI_Init Soft_SPI_Init `(v  1 e 1 0 ]
+"64
+[v _Soft_SPI_Read Soft_SPI_Read `(uc  1 e 1 0 ]
+"85
+[v _Soft_SPI_Write Soft_SPI_Write `(v  1 e 1 0 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"72 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"593
+[v _utoa utoa `(i  1 s 2 utoa ]
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1368
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"12 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"130 C:\Users\Alcides Ramos\Desktop\RFID2019\xc8\rfid_xc8.X\rfid.c
+[v _Hash_algoritmo Hash_algoritmo `(ul  1 e 4 0 ]
+"144
+[v _Uart1_Init Uart1_Init `(v  1 e 1 0 ]
+"177
+[v _Uart1_Write Uart1_Write `(v  1 e 1 0 ]
+"184
+[v _Uart1_write_text Uart1_write_text `(v  1 e 1 0 ]
+"189
+[v _Uart1_Read Uart1_Read `(uc  1 e 1 0 ]
+"221
+[v _main main `(v  1 e 1 0 ]
+"2647 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic18f2550.h
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3035
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"3257
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S50 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"3562
+[s S58 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[u S62 . 1 `S50 1 . 1 0 `S58 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES62  1 e 1 @3998 ]
+"3983
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+[s S79 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4024
+[s S88 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S91 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S94 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S97 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S100 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S102 . 1 `S79 1 . 1 0 `S88 1 . 1 0 `S91 1 . 1 0 `S94 1 . 1 0 `S97 1 . 1 0 `S100 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES102  1 e 1 @4011 ]
+"4193
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"4449
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"4461
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"4473
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"4485
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+"4634
+[v _CMCON CMCON `VEuc  1 e 1 @4020 ]
+"4979
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @4024 ]
+"5400
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"7837
+[v _BRG16 BRG16 `VEb  1 e 0 @32195 ]
+"7840
+[v _BRGH BRGH `VEb  1 e 0 @32098 ]
+"7996
+[v _CREN CREN `VEb  1 e 0 @32092 ]
+"8716
+[v _LATA0 LATA0 `VEb  1 e 0 @31816 ]
+"8719
+[v _LATA1 LATA1 `VEb  1 e 0 @31817 ]
+"8722
+[v _LATA2 LATA2 `VEb  1 e 0 @31818 ]
+"8725
+[v _LATA3 LATA3 `VEb  1 e 0 @31819 ]
+"8749
+[v _LATB4 LATB4 `VEb  1 e 0 @31828 ]
+"8752
+[v _LATB5 LATB5 `VEb  1 e 0 @31829 ]
+"8755
+[v _LATB6 LATB6 `VEb  1 e 0 @31830 ]
+"8758
+[v _LATB7 LATB7 `VEb  1 e 0 @31831 ]
+"9016
+[v _RA4 RA4 `VEb  1 e 0 @31748 ]
+"9100
+[v _RCEN RCEN `VEb  1 e 0 @32299 ]
+"9205
+[v _SPEN SPEN `VEb  1 e 0 @32095 ]
+"9457
+[v _TRISA0 TRISA0 `VEb  1 e 0 @31888 ]
+"9460
+[v _TRISA1 TRISA1 `VEb  1 e 0 @31889 ]
+"9463
+[v _TRISA2 TRISA2 `VEb  1 e 0 @31890 ]
+"9466
+[v _TRISA3 TRISA3 `VEb  1 e 0 @31891 ]
+"9469
+[v _TRISA4 TRISA4 `VEb  1 e 0 @31892 ]
+"9514
+[v _TRISC7 TRISC7 `VEb  1 e 0 @31911 ]
+"9577
+[v _TXEN TXEN `VEb  1 e 0 @32101 ]
+"55 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"114 C:\Users\Alcides Ramos\Desktop\RFID2019\xc8\rfid_xc8.X\rfid.c
+[v _texto texto `[10]uc  1 e 10 0 ]
+"115
+[v _UID UID `[10]uc  1 e 10 0 ]
+"118
+[v _TagType TagType `ui  1 e 2 0 ]
+"119
+[v _cont cont `uc  1 e 1 0 ]
+"123
+[v _codigo_rfid codigo_rfid `ul  1 e 4 0 ]
+"221
+[v _main main `(v  1 e 1 0 ]
+{
+"314
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[s S818 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+"13
+[v sprintf@f f `S818  1 a 6 4 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 2 ]
+"11
+[v sprintf@ret ret `i  1 a 2 0 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 87 ]
+[v sprintf@fmt fmt `*.25Cuc  1 p 2 89 ]
+"23
+} 0
+"1368 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1371
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 85 ]
+[s S307 _IO_FILE 0 ]
+"1368
+[v vfprintf@fp fp `*.39S307  1 p 2 79 ]
+[v vfprintf@fmt fmt `*.25Cuc  1 p 2 81 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 83 ]
+"1382
+} 0
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"675
+[v vfpfcnvrt@llu llu `uo  1 a 8 71 ]
+[s S307 _IO_FILE 0 ]
+"670
+[v vfpfcnvrt@fp fp `*.39S307  1 p 2 59 ]
+[v vfpfcnvrt@fmt fmt `*.39*.25uc  1 p 2 61 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 63 ]
+"1365
+} 0
+"593
+[v _utoa utoa `(i  1 s 2 utoa ]
+{
+"596
+[v utoa@n n `uo  1 a 8 49 ]
+"595
+[v utoa@i i `i  1 a 2 57 ]
+[v utoa@w w `i  1 a 2 47 ]
+[v utoa@p p `i  1 a 2 45 ]
+[s S307 _IO_FILE 0 ]
+"593
+[v utoa@fp fp `*.39S307  1 p 2 27 ]
+[v utoa@d d `uo  1 p 8 29 ]
+"619
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 25 ]
+[v pad@i i `i  1 a 2 23 ]
+[s S307 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.39S307  1 p 2 16 ]
+[v pad@buf buf `*.39uc  1 p 2 18 ]
+[v pad@p p `i  1 p 2 20 ]
+"95
+} 0
+"12 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"14
+[v strlen@a a `*.39Cuc  1 a 2 4 ]
+"12
+[v strlen@s s `*.39Cuc  1 p 2 0 ]
+"26
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 14 ]
+"10
+[v fputs@c c `uc  1 a 1 13 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 9 ]
+[s S818 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.39S818  1 p 2 11 ]
+"19
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[s S818 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.39S818  1 p 2 2 ]
+"21
+} 0
+"7 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+{
+"12
+[v ___lomod@counter counter `uc  1 a 1 16 ]
+"9
+[v ___lomod@dividend dividend `uo  1 p 8 0 ]
+[v ___lomod@divisor divisor `uo  1 p 8 8 ]
+"27
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v ___lodiv@quotient quotient `uo  1 a 8 16 ]
+"13
+[v ___lodiv@counter counter `uc  1 a 1 24 ]
+"9
+[v ___lodiv@dividend dividend `uo  1 p 8 0 ]
+[v ___lodiv@divisor divisor `uo  1 p 8 8 ]
+"32
+} 0
+"3 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+"5
+[v strncmp@r r `*.25Cuc  1 a 2 10 ]
+[v strncmp@l l `*.25Cuc  1 a 2 8 ]
+"3
+[v strncmp@_l _l `*.25Cuc  1 p 2 0 ]
+[v strncmp@_r _r `*.25Cuc  1 p 2 2 ]
+[v strncmp@n n `ui  1 p 2 4 ]
+"9
+} 0
+"184 C:\Users\Alcides Ramos\Desktop\RFID2019\xc8\rfid_xc8.X\rfid.c
+[v _Uart1_write_text Uart1_write_text `(v  1 e 1 0 ]
+{
+[v Uart1_write_text@info info `*.35uc  1 p 2 1 ]
+"187
+} 0
+"177
+[v _Uart1_Write Uart1_Write `(v  1 e 1 0 ]
+{
+[v Uart1_Write@txData txData `uc  1 a 1 wreg ]
+[v Uart1_Write@txData txData `uc  1 a 1 wreg ]
+[v Uart1_Write@txData txData `uc  1 a 1 0 ]
+"182
+} 0
+"144
+[v _Uart1_Init Uart1_Init `(v  1 e 1 0 ]
+{
+"146
+[v Uart1_Init@temp_ temp_ `ui  1 a 2 22 ]
+"144
+[v Uart1_Init@baudios baudios `Cl  1 p 4 14 ]
+"175
+} 0
+"7 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 10 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 9 ]
+[v ___aldiv@counter counter `uc  1 a 1 8 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 0 ]
+[v ___aldiv@divisor divisor `l  1 p 4 4 ]
+"41
+} 0
+"48 C:\Users\Alcides Ramos\Desktop\RFID2019\xc8\rfid_xc8.X/soft_spi.h
+[v _Soft_SPI_Init Soft_SPI_Init `(v  1 e 1 0 ]
+{
+"61
+} 0
+"451 C:\Users\Alcides Ramos\Desktop\RFID2019\xc8\rfid_xc8.X/RC522.h
+[v _MFRC522_isCard MFRC522_isCard `(uc  1 e 1 0 ]
+{
+[v MFRC522_isCard@TagType TagType `*.39uc  1 p 2 36 ]
+"457
+} 0
+"261
+[v _MFRC522_Request MFRC522_Request `(uc  1 e 1 0 ]
+{
+[v MFRC522_Request@reqMode reqMode `uc  1 a 1 wreg ]
+"264
+[v MFRC522_Request@backBits backBits `ui  1 a 2 34 ]
+"263
+[v MFRC522_Request@_status _status `uc  1 a 1 33 ]
+"261
+[v MFRC522_Request@reqMode reqMode `uc  1 a 1 wreg ]
+[v MFRC522_Request@TagType TagType `*.39uc  1 p 2 30 ]
+"265
+[v MFRC522_Request@reqMode reqMode `uc  1 a 1 32 ]
+"273
+} 0
+"458
+[v _MFRC522_ReadCardSerial MFRC522_ReadCardSerial `(uc  1 e 1 0 ]
+{
+"460
+[v MFRC522_ReadCardSerial@_status _status `uc  1 a 1 40 ]
+"458
+[v MFRC522_ReadCardSerial@str str `*.39uc  1 p 2 38 ]
+"467
+} 0
+"421
+[v _MFRC522_AntiColl MFRC522_AntiColl `(uc  1 e 1 0 ]
+{
+"426
+[v MFRC522_AntiColl@unLen unLen `ui  1 a 2 34 ]
+"424
+[v MFRC522_AntiColl@i i `uc  1 a 1 37 ]
+"423
+[v MFRC522_AntiColl@_status _status `uc  1 a 1 36 ]
+"425
+[v MFRC522_AntiColl@serNumCheck serNumCheck `uc  1 a 1 33 ]
+"421
+[v MFRC522_AntiColl@serNum serNum `*.39uc  1 p 2 30 ]
+"445
+} 0
+"158
+[v _MFRC522_ToCard MFRC522_ToCard `(uc  1 e 1 0 ]
+{
+[v MFRC522_ToCard@command command `uc  1 a 1 wreg ]
+"165
+[v MFRC522_ToCard@i i `ui  1 a 2 27 ]
+"164
+[v MFRC522_ToCard@n n `uc  1 a 1 29 ]
+"161
+[v MFRC522_ToCard@irqEn irqEn `uc  1 a 1 25 ]
+"163
+[v MFRC522_ToCard@lastBits lastBits `uc  1 a 1 24 ]
+"160
+[v MFRC522_ToCard@_status _status `uc  1 a 1 23 ]
+"162
+[v MFRC522_ToCard@waitIRq waitIRq `uc  1 a 1 22 ]
+"158
+[v MFRC522_ToCard@command command `uc  1 a 1 wreg ]
+[v MFRC522_ToCard@sendData sendData `*.39uc  1 p 2 11 ]
+[v MFRC522_ToCard@sendLen sendLen `uc  1 p 1 13 ]
+[v MFRC522_ToCard@backData backData `*.39uc  1 p 2 14 ]
+[v MFRC522_ToCard@backLen backLen `*.39ui  1 p 2 16 ]
+"160
+[v MFRC522_ToCard@command command `uc  1 a 1 26 ]
+"260
+} 0
+"116
+[v _MFRC522_Clear_Bit MFRC522_Clear_Bit `(v  1 s 1 MFRC522_Clear_Bit ]
+{
+[v MFRC522_Clear_Bit@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Clear_Bit@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Clear_Bit@mask mask `uc  1 p 1 8 ]
+"118
+[v MFRC522_Clear_Bit@addr addr `uc  1 a 1 10 ]
+"119
+} 0
+"136
+[v _MFRC522_Init MFRC522_Init `(v  1 e 1 0 ]
+{
+"157
+} 0
+"124
+[v _MFRC522_Reset MFRC522_Reset `(v  1 e 1 0 ]
+{
+"127
+} 0
+"128
+[v _MFRC522_AntennaOn MFRC522_AntennaOn `(v  1 e 1 0 ]
+{
+"131
+} 0
+"120
+[v _MFRC522_Set_Bit MFRC522_Set_Bit `(v  1 s 1 MFRC522_Set_Bit ]
+{
+[v MFRC522_Set_Bit@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Set_Bit@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Set_Bit@mask mask `uc  1 p 1 8 ]
+"122
+[v MFRC522_Set_Bit@addr addr `uc  1 a 1 9 ]
+"123
+} 0
+"100
+[v _MFRC522_Wr MFRC522_Wr `(v  1 s 1 MFRC522_Wr ]
+{
+[v MFRC522_Wr@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Wr@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Wr@value value `uc  1 p 1 6 ]
+"102
+[v MFRC522_Wr@addr addr `uc  1 a 1 7 ]
+"106
+} 0
+"107
+[v _MFRC522_Rd MFRC522_Rd `(uc  1 s 1 MFRC522_Rd ]
+{
+[v MFRC522_Rd@addr addr `uc  1 a 1 wreg ]
+"109
+[v MFRC522_Rd@value value `uc  1 a 1 5 ]
+"107
+[v MFRC522_Rd@addr addr `uc  1 a 1 wreg ]
+"110
+[v MFRC522_Rd@addr addr `uc  1 a 1 4 ]
+"115
+} 0
+"85 C:\Users\Alcides Ramos\Desktop\RFID2019\xc8\rfid_xc8.X/soft_spi.h
+[v _Soft_SPI_Write Soft_SPI_Write `(v  1 e 1 0 ]
+{
+[v Soft_SPI_Write@dato_ dato_ `uc  1 a 1 wreg ]
+"87
+[v Soft_SPI_Write@cont_s cont_s `uc  1 a 1 1 ]
+"85
+[v Soft_SPI_Write@dato_ dato_ `uc  1 a 1 wreg ]
+"87
+[v Soft_SPI_Write@dato_ dato_ `uc  1 a 1 0 ]
+"101
+} 0
+"64
+[v _Soft_SPI_Read Soft_SPI_Read `(uc  1 e 1 0 ]
+{
+"66
+[v Soft_SPI_Read@cont_s cont_s `uc  1 a 1 3 ]
+"67
+[v Soft_SPI_Read@dato_ dato_ `uc  1 a 1 2 ]
+"83
+} 0
+"130 C:\Users\Alcides Ramos\Desktop\RFID2019\xc8\rfid_xc8.X\rfid.c
+[v _Hash_algoritmo Hash_algoritmo `(ul  1 e 4 0 ]
+{
+"132
+[v Hash_algoritmo@hash_acum hash_acum `ul  1 a 4 17 ]
+"141
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 8 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0

@@ -1,0 +1,30 @@
+main
+	__CC2DW
+	UART1_Init
+	UART1_Write_Text
+		UART1_Write
+	procesarx
+		strstr
+			strlen
+			strncmp
+			strchr
+		strtok
+			strspn
+				strchr
+			strcspn
+				strchr
+		strcpy
+		atoi
+			isdigit
+			Mul_16X16_U
+		memset
+	memset
+interrupcion
+	derecha1
+		saca_secuencia1
+	izquierda1
+		saca_secuencia1
+	derecha2
+		saca_secuencia2
+	izquierda2
+		saca_secuencia2

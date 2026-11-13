@@ -1,0 +1,106 @@
+[DEVICE]
+Name=P33FJ32MC202
+Clock=80000000
+[MEMORY_MODEL]
+Value=0
+[BUILD_TYPE]
+Value=0
+[ACTIVE_TAB]
+Value=Config_timers.h
+[USE_EEPROM]
+Value=0
+[USE_HEAP]
+Value=0
+[HEAP_SIZE]
+Value=0
+[EEPROM_DEFINITION]
+Value=
+[FILES]
+File0=dspictimers.c
+Count=1
+[BINARIES]
+Count=0
+[IMAGES]
+Count=0
+ActiveImageIndex=-1
+[OPENED_FILES]
+File0=dspictimers.c
+File1=Config_Interrupcion.h
+File2=Config_timers.h
+Count=3
+[EEPROM]
+Count=0
+[ACTIVE_COMMENTS_FILES]
+Count=0
+[OTHER_FILES]
+Count=0
+[SEARCH_PATH]
+Count=0
+[HEADER_PATH]
+Count=0
+[HEADERS]
+Count=0
+[PLDS]
+Count=0
+[Useses]
+File0=Peripheral_Pin_Select
+File1=UART
+Count=2
+[EXPANDED_NODES]
+Count=0
+[LIB_EXPANDED_NODES]
+0=mikroE Libraries
+1=System Libraries
+9=Button
+11=CAN_SPI
+20=Compact_Flash
+32=Compact_Flash_FAT16
+95=C_Stdlib
+129=C_Type
+142=EPSON_S1D13700
+189=Glcd
+245=Lcd
+260=Matrices
+272=Mmc
+281=Mmc_FAT16
+318=Peripheral_Pin_Select
+323=Port_Expander
+353=PrintOut
+358=PWM
+363=PWM-MC
+372=Q15
+408=Software_UART
+413=Sound
+424=SPI_Ethernet
+477=SPI_Ethernet_24j600
+531=SPI_Glcd
+565=SPI_Lcd
+572=SPI_Lcd8
+579=SPI_T6963C
+620=STMPE610
+654=T6963C
+690=TouchPanel
+703=UART
+719=Vectors
+732=Additional Libraries
+733=Memory manager dlmalloc
+734=Memory_manager_dlmalloc
+757=FAT32 Library
+758=FAT32
+796=FAT32_Driver
+806=FT800
+807=FT800
+1137=FT810
+1138=FT810
+1485=FT812
+1486=FT812
+1833=mikroSDK Libraries
+1834=mikroBUS Board Definition API
+1836=Third Party Libraries
+1837=Network_WiFi_dsPIC
+1838=Net_Wireless_MCW1001
+1878=OSD Click
+1879=OSD_DSPIC
+1929=Click_RTC_DSPIC
+1930=RTC_DSPIC
+Count=54
